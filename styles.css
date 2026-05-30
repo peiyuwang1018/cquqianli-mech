@@ -484,49 +484,6 @@ main,
   margin-bottom: 20px;
 }
 
-.home-index {
-  padding-bottom: 72px;
-}
-
-.link-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
-}
-
-.link-grid a {
-  min-height: 180px;
-  padding: 26px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  transition: background 160ms ease;
-}
-
-.link-grid a:hover {
-  background: var(--surface);
-}
-
-.link-grid span {
-  display: block;
-  margin-bottom: 28px;
-  color: var(--accent);
-  font-family: "Lora", serif;
-  font-size: 13px;
-}
-
-.link-grid strong {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 20px;
-}
-
-.link-grid small {
-  color: var(--subtle);
-  font-size: 14px;
-  line-height: 1.65;
-}
-
 .page-hero {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(380px, 0.6fr);
@@ -666,8 +623,8 @@ main,
 }
 
 .advisor-row {
-  max-width: 520px;
-  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  max-width: 700px;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
 }
 
 .trainee-row {
@@ -1355,7 +1312,6 @@ address a {
 
   .intro-grid,
   .three-column,
-  .link-grid,
   .project-list article {
     grid-template-columns: 1fr;
   }
