@@ -17,6 +17,7 @@
   --accent: #d51f68;
   --accent-soft: #fae8f0;
   --accent-rose: #d51f68;
+  --brand-divider: #5cfc90;
   --green: #5cfc90;
   --max-width: 1180px;
 }
@@ -38,6 +39,7 @@
   --accent: #5cfc90;
   --accent-soft: #173822;
   --accent-rose: #ed2174;
+  --brand-divider: #ed2174;
   --green: #5cfc90;
 }
 
@@ -133,21 +135,38 @@ img {
 .brand-text {
   display: inline-flex;
   align-items: baseline;
-  gap: 6px;
+  gap: 12px;
   line-height: 1.2;
   white-space: nowrap;
 }
 
-.brand-text strong {
+.brand-text strong,
+.brand-text small {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "思源宋体", serif;
   font-size: 19px;
   font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.brand-text strong {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 13px;
   white-space: nowrap;
+}
+
+.brand-text strong::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  background: var(--brand-divider);
+  transform: translateY(2px);
 }
 
 .brand-text small {
   color: var(--accent);
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .nav-links {
