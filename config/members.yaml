@@ -37,9 +37,9 @@ advisors:
 
 formal_members:
   - name: 张天煦
-    unit: 工程
+    unit: 步哨
     role: ""
-    intro: 负责工程方向机构研发与赛季任务执行。
+    intro: 负责步哨方向机构研发与赛季任务执行。
     grade: ""
     photo: assets/photos/张天煦.jpg
     projects: []

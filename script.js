@@ -128,26 +128,91 @@ document.querySelectorAll(".project-accordion").forEach((accordion) => {
   });
 });
 
+const quoteStage = document.querySelector("[data-quote-stage]");
+const quoteText = document.querySelector("[data-quote-text]");
+const quoteSource = document.querySelector("[data-quote-source]");
+const quoteButton = document.querySelector(".quote-random-button");
+const quotes = [
+  { text: "运筹帷幄，决胜千里", source: "重庆大学 千里战队" },
+  { text: "日拱一卒，功不唐捐", source: "上海交通大学 交龙战队" },
+  { text: "理想臣服实践，勤恳铸就巅峰", source: "东北大学 TDT 战队" },
+  { text: "初心高于胜负，成长大于输赢", source: "RoboMaster" },
+  { text: "保持纯洁，保持优雅", source: "" },
+  { text: "不要妥协，不要背叛", source: "" },
+];
+let quoteIndex = 0;
+let quoteTimer = null;
+
+function updateQuote(nextIndex) {
+  if (!quoteStage || !quoteText || !quoteSource) return;
+
+  const quote = quotes[nextIndex];
+  const applyQuote = () => {
+    quoteText.textContent = quote.text;
+    quoteSource.textContent = quote.source ? `—— ${quote.source}` : "";
+    quoteStage.classList.remove("is-switching");
+  };
+
+  quoteIndex = nextIndex;
+
+  if (reducedMotion.matches) {
+    applyQuote();
+    return;
+  }
+
+  quoteStage.classList.add("is-switching");
+  window.setTimeout(applyQuote, 360);
+}
+
+function scheduleNextQuote() {
+  if (!quoteStage) return;
+  window.clearInterval(quoteTimer);
+  quoteTimer = window.setInterval(() => {
+    updateQuote((quoteIndex + 1) % quotes.length);
+  }, 5000);
+}
+
+quoteButton?.addEventListener("click", () => {
+  let nextIndex = Math.floor(Math.random() * quotes.length);
+  if (quotes.length > 1 && nextIndex === quoteIndex) {
+    nextIndex = (nextIndex + 1) % quotes.length;
+  }
+  updateQuote(nextIndex);
+  scheduleNextQuote();
+});
+
+scheduleNextQuote();
+
 document.querySelectorAll(".team-section").forEach((section) => {
   const introStrip = section.querySelector(".member-intro-strip");
+  const memberRow = section.querySelector(".member-row");
   const cards = section.querySelectorAll(".member-card[data-intro]");
 
   if (!introStrip || !cards.length) return;
 
   const showIntro = (card) => {
+    cards.forEach((item) => item.classList.remove("is-active"));
+    card.classList.add("is-active");
+    memberRow?.classList.add("has-active");
     introStrip.textContent = card.dataset.intro || "";
     introStrip.classList.toggle("is-visible", Boolean(card.dataset.intro));
   };
 
   const hideIntro = () => {
+    cards.forEach((item) => item.classList.remove("is-active"));
+    memberRow?.classList.remove("has-active");
     introStrip.classList.remove("is-visible");
     introStrip.textContent = "";
   };
 
   cards.forEach((card) => {
     card.addEventListener("mouseenter", () => showIntro(card));
+    card.addEventListener("pointerenter", () => showIntro(card));
+    card.addEventListener("pointerdown", () => showIntro(card));
+    card.addEventListener("click", () => showIntro(card));
     card.addEventListener("focus", () => showIntro(card));
     card.addEventListener("mouseleave", hideIntro);
+    card.addEventListener("pointerleave", hideIntro);
     card.addEventListener("blur", hideIntro);
   });
 });
