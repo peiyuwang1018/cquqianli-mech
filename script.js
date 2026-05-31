@@ -127,3 +127,27 @@ document.querySelectorAll(".project-accordion").forEach((accordion) => {
     });
   });
 });
+
+document.querySelectorAll(".team-section").forEach((section) => {
+  const introStrip = section.querySelector(".member-intro-strip");
+  const cards = section.querySelectorAll(".member-card[data-intro]");
+
+  if (!introStrip || !cards.length) return;
+
+  const showIntro = (card) => {
+    introStrip.textContent = card.dataset.intro || "";
+    introStrip.classList.toggle("is-visible", Boolean(card.dataset.intro));
+  };
+
+  const hideIntro = () => {
+    introStrip.classList.remove("is-visible");
+    introStrip.textContent = "";
+  };
+
+  cards.forEach((card) => {
+    card.addEventListener("mouseenter", () => showIntro(card));
+    card.addEventListener("focus", () => showIntro(card));
+    card.addEventListener("mouseleave", hideIntro);
+    card.addEventListener("blur", hideIntro);
+  });
+});

@@ -1068,19 +1068,19 @@ main,
 
 .member-row {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 24px 28px;
+  grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  gap: 22px 18px;
   align-items: start;
 }
 
 .advisor-row {
   max-width: none;
   grid-template-columns: repeat(8, minmax(0, 1fr));
-  gap: 18px;
+  gap: 14px;
 }
 
 .advisor-row .avatar-placeholder {
-  width: min(100%, 88px);
+  width: min(100%, 106px);
   margin-bottom: 10px;
 }
 
@@ -1136,7 +1136,7 @@ main,
 }
 
 .formal-row {
-  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(106px, 1fr));
 }
 
 .unit-tag {
@@ -1254,13 +1254,15 @@ main,
 }
 
 .member-card {
+  position: relative;
   text-align: left;
+  outline: none;
 }
 
 .avatar-placeholder {
-  width: min(100%, 112px);
+  width: min(100%, 130px);
   aspect-ratio: 35 / 49;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .avatar-placeholder img {
@@ -1294,6 +1296,27 @@ main,
 
 .member-card p {
   font-size: 14px;
+}
+
+.member-intro-strip {
+  min-height: 34px;
+  max-width: 860px;
+  margin: 14px auto 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease,
+    color 240ms ease;
+}
+
+.member-intro-strip.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .name-list {
@@ -2230,8 +2253,8 @@ address a {
   .member-row,
   .formal-row,
   .trainee-row {
-    grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
-    gap: 22px 18px;
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+    gap: 22px 16px;
   }
 
   .advisor-row {
@@ -2239,7 +2262,7 @@ address a {
   }
 
   .advisor-row .avatar-placeholder {
-    width: min(100%, 82px);
+    width: min(100%, 96px);
   }
 
   .unit-card {

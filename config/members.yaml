@@ -5,118 +5,132 @@ advisors:
   - name: 汪沛宇
     title: 顾问负责人
     photo: assets/photos/汪沛宇.jpg
-    note: ""
+    intro: 负责顾问组协调、培养体系建设与长期技术路线支持。
   - name: 洪瑞珑
     title: 行业顾问
-    photo: ""
-    note: ""
-  - name: 江晨曦
-    title: 顾问
-    photo: ""
-    note: ""
+    photo: assets/photos/洪瑞珑.jpg
+    intro: 提供行业视角、工程实践经验与产品化研发建议。
   - name: 张博洋
     title: 顾问
-    photo: ""
-    note: ""
+    photo: assets/photos/张博洋.jpg
+    intro: 提供结构设计、装配调试与赛季项目复盘方面的指导。
   - name: Aouk
     title: 顾问
-    photo: ""
-    note: ""
+    photo: assets/photos/Aouk.jpg
+    intro: 提供项目管理、技术资料整理与跨组协作方面的建议。
+  - name: 江晨曦
+    title: 顾问
+    photo: assets/photos/江晨曦.jpg
+    intro: 提供工程机器人、机构集成与可靠性测试方向的指导。
   - name: 覃宇铭
     title: 顾问
     photo: ""
-    note: ""
-  - name: 李晨弘
-    title: 顾问
-    photo: ""
-    note: ""
+    intro: 提供步兵整机、运动机构与赛季迭代方向的指导。
   - name: 粟宇
     title: 顾问
     photo: ""
-    note: ""
+    intro: 提供英雄、发射链路与模块验证方向的指导。
+  - name: 李晨弘
+    title: 顾问
+    photo: assets/photos/李晨弘.jpg
+    intro: 提供制造流程、装配规范与实验室建设方面的支持。
 
 formal_members:
   - name: 张天煦
     unit: 工程
     role: ""
+    intro: 负责工程方向机构研发与赛季任务执行。
     grade: ""
-    photo: ""
+    photo: assets/photos/张天煦.jpg
     projects: []
   - name: 樊亦媛
     unit: 英雄
     role: ""
+    intro: 开展英雄方向发射机构与整机集成研发。
     grade: ""
     photo: ""
     projects: []
   - name: 聂山淳
     unit: 飞镖
     role: ""
+    intro: 开展飞镖方向结构方案、装配测试与赛季迭代。
     grade: ""
     photo: ""
     projects: []
   - name: 赵乙璠
     unit: 工程
     role: ""
+    intro: 开展工程方向取放机构、任务链路与可靠性验证。
     grade: ""
     photo: ""
     projects: []
   - name: 郭禹澄
     unit: 工程
     role: ""
+    intro: 开展工程方向储存机构、结构集成与装配调试。
     grade: ""
     photo: ""
     projects: []
   - name: 卢裕阳
     unit: 英雄
     role: ""
+    intro: 开展英雄方向结构设计、发射链路与维护优化。
     grade: ""
     photo: ""
     projects: []
   - name: 高阳洋
     unit: 英雄
     role: ""
+    intro: 开展英雄方向模块验证、整机装配与测试记录。
     grade: ""
     photo: ""
     projects: []
   - name: 张铭珂
     unit: 步哨
     role: ""
+    intro: 开展步哨方向结构布局、运动机构与赛季维护。
     grade: ""
     photo: ""
     projects: []
   - name: 陈夏菲
     unit: 工程
     role: ""
+    intro: 开展工程方向结构设计、加工装配与测试复盘。
     grade: ""
     photo: ""
     projects: []
   - name: 徐进
     unit: 步哨
     role: ""
+    intro: 开展步哨方向机构集成、装配调试与可靠性测试。
     grade: ""
     photo: ""
     projects: []
   - name: 张郭浩
     unit: 空中
     role: ""
+    intro: 开展空中方向轻量化结构、任务载荷与维护设计。
     grade: ""
     photo: ""
     projects: []
   - name: 胡茗媛
     unit: 飞镖
     role: ""
+    intro: 开展飞镖方向发射系统、结构约束与测试调试。
     grade: ""
     photo: ""
     projects: []
   - name: 朱雨文
     unit: 步哨
     role: ""
+    intro: 开展步哨方向结构方案、装配维护与赛季迭代。
     grade: ""
     photo: ""
     projects: []
   - name: 胡锦宇
     unit: 英雄
     role: ""
+    intro: 开展英雄方向发射机构、结构集成与可靠性测试。
     grade: ""
     photo: ""
     projects: []
