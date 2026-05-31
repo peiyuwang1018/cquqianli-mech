@@ -1,0 +1,177 @@
+# 人才去向配置
+# stage 可选：master / phd / work
+
+periods:
+  - id: pre-qianli
+    title: 前千里时期
+    description: 2023 赛季及以前参与机械组建设与研发的队员，在千里时期积极支持过战队发展。
+  - id: qianli
+    title: 千里时期
+    description: 2024 赛季及以后参与千里战队机械组研发与传承的队员。
+
+people:
+  - name: 冯灏霆
+    period: pre-qianli
+    photo: ""
+    seasons: ["2020", "2021"]
+    undergraduate:
+      college: 辛辛那提联合学院
+      major: 机械设计制造及其自动化
+      graduation_year: "2023"
+    experiences:
+      - stage: phd
+        organization_cn: 香港大学
+        organization_en: The University of Hong Kong
+        abbreviation: HKU
+        logo: assets/logo/alumni/hku.png
+        direction: 机械系统 · 机器人研发
+      - stage: master
+        organization_cn: 加州大学伯克利分校
+        organization_en: University of California Berkeley
+        abbreviation: UC Berkeley
+        logo: assets/logo/alumni/ucb.png
+        direction: 机械系统 · 机器人研发
+
+  - name: 傅佳键
+    period: pre-qianli
+    photo: ""
+    seasons: ["2021", "2022"]
+    undergraduate:
+      college: 国家卓越工程师学院
+      major: 机器人工程
+      graduation_year: "2024"
+    experiences:
+      - stage: master
+        organization_cn: 加州大学圣地亚哥分校
+        organization_en: University of California San Diego
+        abbreviation: UC San Diego
+        logo: assets/logo/alumni/ucsd.png
+        direction: 机械工程 · 机器人相关方向
+
+  - name: 伍宇杰
+    period: pre-qianli
+    photo: ""
+    seasons: ["2021", "2022", "2023"]
+    undergraduate:
+      college: 机械与运载工程学院
+      major: 机器人工程
+      graduation_year: "2024"
+    experiences:
+      - stage: work
+        organization_cn: 舞肌科技
+        organization_en: Wuji Technology
+        abbreviation: ""
+        logo: assets/logo/alumni/wuji.tech.svg
+        direction: 灵巧手产品 · 机械研发
+
+  - name: 汪沛宇
+    period: qianli
+    photo: assets/photos/汪沛宇.jpg
+    seasons: ["2021", "2022", "2024", "2025"]
+    undergraduate:
+      college: 机械与运载工程学院
+      major: 机械电子工程
+      graduation_year: "2025"
+    experiences:
+      - stage: master
+        organization_cn: 卡尔斯鲁厄理工学院
+        organization_en: Karlsruhe Institute of Technology
+        abbreviation: KIT
+        logo: assets/logo/alumni/kit.png
+        direction: 机械工程 · 机械电子工程 · 机器人工程
+
+  - name: 洪瑞珑
+    period: qianli
+    photo: ""
+    seasons: ["2024", "2025"]
+    undergraduate:
+      college: 机械与运载工程学院
+      major: 机械电子工程
+      graduation_year: "2026"
+    experiences:
+      - stage: work
+        organization_cn: 大疆创新
+        organization_en: DJI
+        abbreviation: ""
+        logo: assets/logo/alumni/dji.svg
+        direction: 机械工程 · 机械电子工程 · 机器人工程
+
+  - name: 粟宇
+    period: qianli
+    photo: ""
+    seasons: ["2024", "2025", "2026"]
+    undergraduate:
+      college: 机械与运载工程学院
+      major: 机器人工程
+      graduation_year: "2026"
+    experiences:
+      - stage: master
+        organization_cn: 哈尔滨工业大学（深圳）
+        organization_en: Harbin Institute of Technology, Shenzhen
+        abbreviation: HITSZ
+        logo: assets/logo/alumni/hit.png
+        direction: 机械工程 · 机械电子工程 · 机器人工程
+
+  - name: 覃宇铭
+    period: qianli
+    photo: ""
+    seasons: ["2024", "2025"]
+    undergraduate:
+      college: 机械与运载工程学院
+      major: 智能制造
+      graduation_year: "2026"
+    experiences:
+      - stage: master
+        organization_cn: 重庆大学
+        organization_en: Chongqing University
+        abbreviation: CQU
+        logo: assets/logo/alumni/cqu.png
+        direction: 机械工程 · 机械电子工程 · 机器人工程
+
+  - name: 江晨曦
+    period: qianli
+    photo: ""
+    seasons: ["2024", "2025"]
+    undergraduate:
+      college: 机械与运载工程学院
+      major: 机器人工程
+      graduation_year: "2026"
+    experiences:
+      - stage: master
+        organization_cn: 重庆大学
+        organization_en: Chongqing University
+        abbreviation: CQU
+        logo: assets/logo/alumni/cqu.png
+        direction: 机械工程 · 机械电子工程 · 机器人工程
+
+  - name: 韦许韬
+    period: qianli
+    photo: ""
+    seasons: ["2024"]
+    undergraduate:
+      college: 机械与运载工程学院
+      major: 智能制造
+      graduation_year: "2026"
+    experiences:
+      - stage: master
+        organization_cn: 天津大学
+        organization_en: Tianjin University
+        abbreviation: TJU
+        logo: assets/logo/alumni/tju.png
+        direction: 机械工程 · 机械电子工程 · 机器人工程
+
+  - name: 何煦
+    period: qianli
+    photo: ""
+    seasons: ["2024"]
+    undergraduate:
+      college: 机械与运载工程学院
+      major: 机械设计制造及其自动化
+      graduation_year: "2026"
+    experiences:
+      - stage: master
+        organization_cn: 北京航空航天大学
+        organization_en: Beihang University
+        abbreviation: BUAA
+        logo: assets/logo/alumni/bhu.png
+        direction: 机械工程 · 机械电子工程 · 机器人工程

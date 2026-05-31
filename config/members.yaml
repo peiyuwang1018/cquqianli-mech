@@ -1,0 +1,181 @@
+# 部门成员配置
+# unit 可选：英雄 / 工程 / 步哨 / 飞镖 / 空中
+
+advisors:
+  - name: 汪沛宇
+    title: 顾问负责人
+    photo: assets/photos/汪沛宇.jpg
+    note: ""
+  - name: 洪瑞珑
+    title: 行业顾问
+    photo: ""
+    note: ""
+  - name: 江晨曦
+    title: 顾问
+    photo: ""
+    note: ""
+  - name: 张博洋
+    title: 顾问
+    photo: ""
+    note: ""
+  - name: Aouk
+    title: 顾问
+    photo: ""
+    note: ""
+  - name: 覃宇铭
+    title: 顾问
+    photo: ""
+    note: ""
+  - name: 李晨弘
+    title: 顾问
+    photo: ""
+    note: ""
+  - name: 粟宇
+    title: 顾问
+    photo: ""
+    note: ""
+
+formal_members:
+  - name: 张天煦
+    unit: 工程
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 樊亦媛
+    unit: 英雄
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 聂山淳
+    unit: 飞镖
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 赵乙璠
+    unit: 工程
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 郭禹澄
+    unit: 工程
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 卢裕阳
+    unit: 英雄
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 高阳洋
+    unit: 英雄
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 张铭珂
+    unit: 步哨
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 陈夏菲
+    unit: 工程
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 徐进
+    unit: 步哨
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 张郭浩
+    unit: 空中
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 胡茗媛
+    unit: 飞镖
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 朱雨文
+    unit: 步哨
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+  - name: 胡锦宇
+    unit: 英雄
+    role: ""
+    grade: ""
+    photo: ""
+    projects: []
+
+trainees:
+  - name: 姓名
+    unit: 英雄
+    role: ""
+    grade: ""
+    photo: ""
+  - name: 姓名
+    unit: 工程
+    role: ""
+    grade: ""
+    photo: ""
+  - name: 姓名
+    unit: 步哨
+    role: ""
+    grade: ""
+    photo: ""
+  - name: 姓名
+    unit: 飞镖
+    role: ""
+    grade: ""
+    photo: ""
+  - name: 姓名
+    unit: 空中
+    role: ""
+    grade: ""
+    photo: ""
+
+past_member_names:
+  - year: "2025"
+    names:
+      - 姓名
+      - 姓名
+      - 姓名
+      - 姓名
+  - year: "2024"
+    names:
+      - 姓名
+      - 姓名
+      - 姓名
+      - 姓名
+  - year: "2023"
+    names:
+      - 姓名
+      - 姓名
+      - 姓名
+      - 姓名
+  - year: "2022"
+    names:
+      - 姓名
+      - 姓名
+      - 姓名
+      - 姓名
+  - year: "2021"
+    names:
+      - 姓名
+      - 姓名
+      - 姓名
+      - 姓名

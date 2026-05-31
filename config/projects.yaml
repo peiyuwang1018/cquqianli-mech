@@ -1,0 +1,559 @@
+# 研发项目配置
+# category 可选：
+# - whole_robot      整机研发
+# - module_branch    模块/支线研发
+# - infrastructure   基础设施建设
+# - training         梯队基础训练项目
+#
+# 维护建议：
+# - season 用赛季年份，例如 "2026"
+# - display_order 用于同一赛季内的人工排序，数值越小越靠前
+# - 页面展示默认按 pinned、season 从新到旧，再按 display_order 排列
+
+categories:
+  whole_robot: 整机研发
+  module_branch: 模块/支线研发
+  infrastructure: 基础设施建设
+  training: 梯队基础训练项目
+
+projects:
+  - id: serial-leg-infantry-2025
+    title: 串联腿步兵
+    category: whole_robot
+    season: "2025"
+    display_order: 202501
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 覃宇铭
+      participants: [汪沛宇, 王巍澄]
+    summary: 面向 2025 赛季步兵需求开展串联腿底盘与整机机械系统研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: compact-omni-infantry-2025
+    title: 紧凑全向轮步兵
+    category: whole_robot
+    season: "2025"
+    display_order: 202502
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 粟宇
+      participants: []
+    summary: 围绕紧凑布局、稳定运动与快速维护开展 2025 赛季全向轮步兵整机研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: tri-friction-hero-2024
+    title: 三摩擦英雄
+    category: whole_robot
+    season: "2024"
+    display_order: 202401
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 洪瑞珑
+      participants: [汪沛宇]
+    summary: 面向 2024 赛季英雄机器人任务，开展三摩擦发射与整机结构集成。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: parallel-leg-infantry-2024
+    title: 并联腿步兵
+    category: whole_robot
+    season: "2024"
+    display_order: 202402
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 覃宇铭
+      participants: []
+    summary: 2024 赛季并联腿步兵机械系统方案设计、装配调试与赛季迭代。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: four-friction-42mm-launcher-2026
+    title: 四摩擦 42mm 发射机构
+    category: module_branch
+    season: "2026"
+    display_order: 202601
+    status: 研发中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块方案设计 / 样机验证
+    people:
+      lead: 樊亦媛
+      participants: []
+    summary: 面向大弹丸发射稳定性与维护便利性的 42mm 四摩擦发射机构研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: adaptive-engineering-gripper-2026
+    title: 工程自适应夹爪
+    category: module_branch
+    season: "2026"
+    display_order: 202602
+    status: 研发中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块方案设计 / 样机验证
+    people:
+      lead: 赵乙璠
+      participants: []
+    summary: 面向工程机器人取放任务的自适应夹持机构设计与验证。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: energy-unit-storage-2026
+    title: 能量单元存储机构
+    category: module_branch
+    season: "2026"
+    display_order: 202603
+    status: 研发中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块方案设计 / 样机验证
+    people:
+      lead: 郭禹澄
+      participants: []
+    summary: 围绕能量单元收纳、定位与可靠释放开展机械结构研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: puppy-island-chassis-2026
+    title: 小狗登岛底盘
+    category: module_branch
+    season: "2026"
+    display_order: 202604
+    status: 研发中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块方案设计 / 样机验证
+    people:
+      lead: 张天煦
+      participants: []
+    summary: 面向特殊地形与登岛任务的小型底盘机构探索。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: gooseneck-17mm-gimbal-2025
+    title: 17mm 鹅颈云台
+    category: module_branch
+    season: "2025"
+    display_order: 202501
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 韦许韬
+      participants: []
+    summary: 面向 17mm 发射系统集成的鹅颈式云台结构研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: dual-big-wheel-42mm-launcher-2025
+    title: 双大轮 42mm 发射机构
+    category: module_branch
+    season: "2025"
+    display_order: 202502
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 洪瑞珑
+      participants: []
+    summary: 面向 42mm 弹丸发射需求的双大轮发射机构设计与测试。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: swerve-3508-module-2025
+    title: 3508 舵轮模组
+    category: module_branch
+    season: "2025"
+    display_order: 202503
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 汪沛宇
+      participants: []
+    summary: 基于 3508 动力系统的舵轮模组结构设计、装配与维护方案探索。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: self-developed-gearbox-2025
+    title: 自研减速箱
+    category: module_branch
+    season: "2025"
+    display_order: 202504
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 覃宇铭
+      participants: []
+    summary: 面向传动效率、结构紧凑性与可维护性的自研减速箱设计。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: self-developed-17mm-feeder-2025
+    title: 自研 17mm 中心供弹机构
+    category: module_branch
+    season: "2025"
+    display_order: 202505
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 粟宇
+      participants: []
+    summary: 面向 17mm 发射链路的中心供弹机构研发与可靠性验证。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: lightweight-topology-gimbal-2024
+    title: 轻量化拓扑云台
+    category: module_branch
+    season: "2024"
+    display_order: 202401
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 何煦
+      participants: []
+    summary: 通过结构轻量化与拓扑优化思路开展云台机械系统探索。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: tri-friction-launcher-2024
+    title: 三摩擦发射机构
+    category: module_branch
+    season: "2024"
+    display_order: 202402
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 汪沛宇
+      participants: []
+    summary: 在 2.5 摩擦方案基础上继续迭代的三摩擦发射机构。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: 晚于 2.5 摩擦 42mm 发射机构。
+
+  - id: two-point-five-friction-42mm-launcher-2024
+    title: 2.5 摩擦 42mm 发射机构
+    category: module_branch
+    season: "2024"
+    display_order: 202403
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 汪沛宇
+      participants: []
+    summary: 早期 42mm 发射链路方案探索，时间早于三摩擦发射机构。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: 早于三摩擦发射机构。
+
+  - id: screw-pitch-hero-gimbal-2022
+    title: 丝杆 pitch 英雄云台
+    category: module_branch
+    season: "2022"
+    display_order: 202201
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发
+    people:
+      lead: 傅佳键
+      participants: []
+    summary: 面向英雄机器人 pitch 轴调节需求的丝杆驱动云台方案。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: qianli-museum-specimen-library
+    title: 千里博物馆-标本库
+    category: infrastructure
+    season: 长期
+    pinned: true
+    display_order: 0
+    status: 长期维护
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 长期归档 / 展示建设
+    people:
+      lead: ""
+      participants: []
+    summary: 长期归档机械组历史样机、关键零件、赛季资料与工程标本。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: 置顶展示。
+
+  - id: tech-core-exchange-station-2026
+    title: 科技核心兑换站
+    category: infrastructure
+    season: "2026"
+    display_order: 202601
+    status: 规划中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 方案设计 / 制造验证
+    people:
+      lead: ""
+      participants: []
+    summary: 2026 赛季科技核心兑换站设计与建设。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: folding-portable-base-2026
+    title: 折叠便携基地
+    category: infrastructure
+    season: "2026"
+    display_order: 202602
+    status: 规划中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 方案设计 / 制造验证
+    people:
+      lead: ""
+      participants: []
+    summary: 2026 赛季折叠便携基地设计与建设。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: energy-mechanism-2025
+    title: 能量机关
+    category: infrastructure
+    season: "2025"
+    display_order: 202501
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季基础设施建设
+    people:
+      lead: ""
+      participants: []
+    summary: 2025 赛季能量机关相关训练与测试设施。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: target-car-2025
+    title: 靶车
+    category: infrastructure
+    season: "2025"
+    display_order: 202502
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季基础设施建设
+    people:
+      lead: ""
+      participants: []
+    summary: 2025 赛季用于射击、识别或测试任务的靶车平台。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: training-field-2025
+    title: 训练赛场
+    category: infrastructure
+    season: "2025"
+    display_order: 202503
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季基础设施建设
+    people:
+      lead: ""
+      participants: []
+    summary: 2025 赛季训练赛场搭建与维护。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: outpost-2024
+    title: 前哨站
+    category: infrastructure
+    season: "2024"
+    display_order: 202401
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季基础设施建设
+    people:
+      lead: ""
+      participants: []
+    summary: 2024 赛季前哨站相关训练与测试设施。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: base-2024
+    title: 基地
+    category: infrastructure
+    season: "2024"
+    display_order: 202402
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季基础设施建设
+    people:
+      lead: ""
+      participants: []
+    summary: 2024 赛季基地相关训练与测试设施。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: base-alarm-clock-2025
+    title: 基地闹钟
+    category: training
+    season: "2025"
+    display_order: 202501
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 梯队基础训练项目
+    people:
+      lead: ""
+      participants: []
+    summary: 面向新成员基础结构设计、加工装配与调试记录的训练项目。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: projectile-collection-cart-2025
+    title: 集弹小车
+    category: training
+    season: "2025"
+    display_order: 202502
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 梯队基础训练项目
+    people:
+      lead: ""
+      participants: []
+    summary: 面向机械传动、运动结构与任务执行链路的梯队基础训练项目。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""

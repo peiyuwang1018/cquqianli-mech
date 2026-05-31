@@ -1,0 +1,45 @@
+# 团队资源配置示例
+
+resources:
+  - id: training-plan
+    title: 培养计划
+    page: resource-training.html
+    summary: ""
+    sections:
+      - title: 入门阶段
+        items:
+          - ""
+      - title: 进阶阶段
+        items:
+          - ""
+      - title: 项目阶段
+        items:
+          - ""
+    assets:
+      cover: ""
+      files:
+        - title: 机械组培养计划.pdf
+          url: ""
+
+  - id: equipment-list
+    title: 设备资源清单
+    page: resource-equipment.html
+    summary: ""
+    groups:
+      - title: 加工制造
+        items:
+          - name: ""
+            quantity: ""
+            note: ""
+      - title: 装配调试
+        items:
+          - name: ""
+            quantity: ""
+            note: ""
+      - title: 测量检查
+        items:
+          - name: ""
+            quantity: ""
+            note: ""
+    assets:
+      cover: ""

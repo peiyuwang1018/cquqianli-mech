@@ -23,7 +23,7 @@
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
         <div class="nav-links" id="nav-links">
-          <a href="index.html" data-nav="home">首页</a><a href="about.html" data-nav="about">关于我们</a><a href="projects.html" data-nav="projects">研发项目</a><a href="resources.html" data-nav="resources">团队资源</a><a href="team.html" data-nav="team">部门成员</a><a href="alumni.html" data-nav="alumni">人才去向</a><a href="join.html" data-nav="join">加入我们</a><a href="downloads.html" data-nav="downloads">下载区</a><a href="contact.html" data-nav="contact">联系方式</a>
+          <a href="index.html" data-nav="home">首页</a><a href="about.html" data-nav="about">关于我们</a><a href="projects.html" data-nav="projects">研发项目</a><span class="nav-menu"><a href="resources.html" data-nav="resources" aria-haspopup="true">团队资源</a><span class="nav-dropdown" aria-label="团队资源子页面"><a href="resource-training.html">培养计划</a><a href="resource-equipment.html">设备资源清单</a></span></span><a href="team.html" data-nav="team">部门成员</a><a href="alumni.html" data-nav="alumni">人才去向</a><a href="join.html" data-nav="join">加入我们</a><a href="downloads.html" data-nav="downloads">下载区</a><a href="contact.html" data-nav="contact">联系方式</a>
         </div>
         <button class="theme-toggle" type="button" aria-label="切换明暗模式" aria-pressed="false">
           <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
@@ -42,51 +42,309 @@
         <p>项目按工程属性归档，后续可以在每一类下继续扩展赛季记录、图片、技术细节和负责人信息。</p>
       </section>
 
-      <section class="section-block project-list">
-        <article>
-          <figure class="media-placeholder"></figure>
-          <div>
-            <h2>整机研发</h2>
-            <p>面向比赛需求与赛场规则，开展机器人整体机械系统的总体方案设计、集成与优化，提升整机性能与可靠性。</p>
-            <ul class="plain-list">
-              <li>英雄机器人、步兵机器人、哨兵机器人、工程机器人、飞镖系统</li>
-              <li>总体布局、模块接口、整机重量、维护便利性与可靠性测试</li>
-            </ul>
+      <section class="section-block project-accordion-list">
+        <details class="project-accordion">
+          <summary>
+            <span>
+              <span class="project-summary-title"><strong>整机研发</strong><em>Robot Design</em></span>
+              <small>面向比赛需求与赛场规则，开展机器人整体机械系统的总体方案设计、集成与优化。</small>
+            </span>
+          </summary>
+          <div class="project-carousel-shell">
+            <button class="project-carousel-button project-carousel-prev" type="button" aria-label="上一页" disabled></button>
+            <div class="project-carousel" aria-label="整机研发项目">
+              <article class="project-card">
+                <figure class="project-card-media"><span>串联腿步兵</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">ROBOT</p>
+                  <h2>串联腿步兵</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">覃宇铭</span><span class="person-badge badge-member">汪沛宇</span><span class="person-badge badge-member">王巍澄</span></p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>紧凑全向轮步兵</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">ROBOT</p>
+                  <h2>紧凑全向轮步兵</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">粟宇</span></p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>三摩擦英雄</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">ROBOT</p>
+                  <h2>三摩擦英雄</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">洪瑞珑</span><span class="person-badge badge-member">汪沛宇</span></p>
+                  <span class="project-card-year">2024</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>并联腿步兵</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">ROBOT</p>
+                  <h2>并联腿步兵</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">覃宇铭</span></p>
+                  <span class="project-card-year">2024</span>
+                </div>
+              </article>
+            </div>
+            <button class="project-carousel-button project-carousel-next" type="button" aria-label="下一页"></button>
           </div>
-        </article>
-        <article>
-          <figure class="media-placeholder"></figure>
-          <div>
-            <h2>模块/支线研发</h2>
-            <p>围绕核心功能模块与前沿技术方向，开展机构创新与专用模块研究，形成可复用的技术沉淀。</p>
-            <ul class="plain-list">
-              <li>云台、发射机构、取弹机构、快速拆装、轻量化结构、传动方案</li>
-              <li>原理验证、样机迭代、专项测试、模块文档归档</li>
-            </ul>
+        </details>
+
+        <details class="project-accordion">
+          <summary>
+            <span>
+              <span class="project-summary-title"><strong>模块/支线研发</strong><em>Module Research</em></span>
+              <small>围绕核心功能模块与前沿技术方向，开展机构创新与专用模块研究。</small>
+            </span>
+          </summary>
+          <div class="project-carousel-shell">
+            <button class="project-carousel-button project-carousel-prev" type="button" aria-label="上一页" disabled></button>
+            <div class="project-carousel" aria-label="模块支线研发项目">
+              <article class="project-card">
+                <figure class="project-card-media"><span>四摩擦 42mm</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>四摩擦 42mm 发射机构</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">樊亦媛</span></p>
+                  <span class="project-card-year">2026</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>自适应夹爪</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>工程自适应夹爪</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">赵乙璠</span></p>
+                  <span class="project-card-year">2026</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>能量单元</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>能量单元存储机构</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">郭禹澄</span></p>
+                  <span class="project-card-year">2026</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>登岛底盘</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>小狗登岛底盘</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">张天煦</span></p>
+                  <span class="project-card-year">2026</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>鹅颈云台</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>17mm 鹅颈云台</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">韦许韬</span></p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>双大轮 42mm</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>双大轮 42mm 发射机构</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">洪瑞珑</span></p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>3508 舵轮</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>3508 舵轮模组</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">汪沛宇</span></p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>减速箱</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>自研减速箱</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">覃宇铭</span></p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>中心供弹</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>自研 17mm 中心供弹机构</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">粟宇</span></p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>拓扑云台</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>轻量化拓扑云台</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">何煦</span></p>
+                  <span class="project-card-year">2024</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>三摩擦</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>三摩擦发射机构</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">汪沛宇</span></p>
+                  <span class="project-card-year">2024</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>2.5 摩擦</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>2.5 摩擦 42mm 发射机构</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">汪沛宇</span></p>
+                  <span class="project-card-year">2024</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>丝杆 pitch</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">MODULE</p>
+                  <h2>丝杆 pitch 英雄云台</h2>
+                  <p class="project-people"><span class="person-badge badge-lead">傅佳键</span></p>
+                  <span class="project-card-year">2022</span>
+                </div>
+              </article>
+            </div>
+            <button class="project-carousel-button project-carousel-next" type="button" aria-label="下一页"></button>
           </div>
-        </article>
-        <article>
-          <figure class="media-placeholder"></figure>
-          <div>
-            <h2>基础设施建设</h2>
-            <p>建设机械组的实验室基础设施与制造保障体系，优化研发流程、物料管理与工程规范。</p>
-            <ul class="plain-list">
-              <li>加工工位、标准件库、BOM 管理、测试平台、图纸归档、装配规范</li>
-              <li>让项目不只依靠个人经验，而能被复用、检查和传承</li>
-            </ul>
+        </details>
+
+        <details class="project-accordion">
+          <summary>
+            <span>
+              <span class="project-summary-title"><strong>基础设施建设</strong><em>Infrastructure</em></span>
+              <small>建设训练与测试设施、物料管理和工程规范，让研发流程可复用、可检查、可传承。</small>
+            </span>
+          </summary>
+          <div class="project-carousel-shell">
+            <button class="project-carousel-button project-carousel-prev" type="button" aria-label="上一页" disabled></button>
+            <div class="project-carousel" aria-label="基础设施建设项目">
+              <article class="project-card">
+                <figure class="project-card-media"><span>千里博物馆</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">INFRASTRUCTURE</p>
+                  <h2>千里博物馆-标本库</h2>
+                  <p>长期归档机械组历史样机、关键零件、赛季资料与工程标本。</p>
+                  <span class="project-card-year">长期</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>科技核心兑换站</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">INFRASTRUCTURE</p>
+                  <h2>科技核心兑换站</h2>
+                  <p>2026 赛季科技核心兑换站设计与建设。</p>
+                  <span class="project-card-year">2026</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>折叠便携基地</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">INFRASTRUCTURE</p>
+                  <h2>折叠便携基地</h2>
+                  <p>2026 赛季折叠便携基地设计与建设。</p>
+                  <span class="project-card-year">2026</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>能量机关</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">INFRASTRUCTURE</p>
+                  <h2>能量机关</h2>
+                  <p>2025 赛季能量机关相关训练与测试设施。</p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>靶车</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">INFRASTRUCTURE</p>
+                  <h2>靶车</h2>
+                  <p>2025 赛季用于射击、识别或测试任务的靶车平台。</p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>训练赛场</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">INFRASTRUCTURE</p>
+                  <h2>训练赛场</h2>
+                  <p>2025 赛季训练赛场搭建与维护。</p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>前哨站</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">INFRASTRUCTURE</p>
+                  <h2>前哨站</h2>
+                  <p>2024 赛季前哨站相关训练与测试设施。</p>
+                  <span class="project-card-year">2024</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>基地</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">INFRASTRUCTURE</p>
+                  <h2>基地</h2>
+                  <p>2024 赛季基地相关训练与测试设施。</p>
+                  <span class="project-card-year">2024</span>
+                </div>
+              </article>
+            </div>
+            <button class="project-carousel-button project-carousel-next" type="button" aria-label="下一页"></button>
           </div>
-        </article>
-        <article>
-          <figure class="media-placeholder"></figure>
-          <div>
-            <h2>梯队训练大作业</h2>
-            <p>通过系统化训练任务与阶段性大作业，夯实成员基础能力，构建稳定的人才梯队。</p>
-            <ul class="plain-list">
-              <li>CAD 建模、传动设计、底盘方案、机构验证、装配误差分析、复盘报告</li>
-              <li>从基础技能训练逐步过渡到真实赛季项目</li>
-            </ul>
+        </details>
+
+        <details class="project-accordion">
+          <summary>
+            <span>
+              <span class="project-summary-title"><strong>梯队基础训练项目</strong><em>Basic Training</em></span>
+              <small>通过系统化训练任务与阶段性大作业，夯实成员基础能力，构建稳定的人才梯队。</small>
+            </span>
+          </summary>
+          <div class="project-carousel-shell">
+            <button class="project-carousel-button project-carousel-prev" type="button" aria-label="上一页" disabled></button>
+            <div class="project-carousel" aria-label="梯队基础训练项目">
+              <article class="project-card">
+                <figure class="project-card-media"><span>基地闹钟</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">TRAINING</p>
+                  <h2>基地闹钟</h2>
+                  <p>面向新成员基础结构设计、加工装配与调试记录的训练项目。</p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <figure class="project-card-media"><span>集弹小车</span></figure>
+                <div class="project-card-body">
+                  <p class="project-card-meta">TRAINING</p>
+                  <h2>集弹小车</h2>
+                  <p>面向机械传动、运动结构与任务执行链路的梯队基础训练项目。</p>
+                  <span class="project-card-year">2025</span>
+                </div>
+              </article>
+            </div>
+            <button class="project-carousel-button project-carousel-next" type="button" aria-label="下一页"></button>
           </div>
-        </article>
+        </details>
       </section>
     </main>
 
