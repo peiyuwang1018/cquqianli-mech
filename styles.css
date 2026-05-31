@@ -2093,6 +2093,112 @@ address a {
   min-height: 220px;
 }
 
+.contact-qr-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 148px;
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--card-bg);
+}
+
+.contact-qr-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.contact-qr-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.contact-qr-thumb {
+  display: block;
+  justify-self: end;
+  width: 148px;
+  border: 1px solid var(--line);
+  background: #171717;
+  overflow: hidden;
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.contact-qr-thumb:hover,
+.contact-qr-thumb:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.contact-qr-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.qr-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: none;
+  place-items: center;
+  padding: 28px;
+}
+
+.qr-lightbox:target {
+  display: grid;
+}
+
+.qr-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.qr-lightbox-panel {
+  position: relative;
+  z-index: 1;
+  width: min(440px, calc(100vw - 48px));
+  margin: 0;
+  padding: 18px 18px 20px;
+  border: 1px solid var(--line);
+  background: var(--card-bg);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+}
+
+.qr-lightbox-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.qr-lightbox-panel figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 15px;
+}
+
+.qr-lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  background: var(--card-bg);
+  color: var(--accent);
+  font-size: 22px;
+  line-height: 1;
+}
+
 .downloads-panel {
   padding-top: 44px;
 }
@@ -2730,6 +2836,21 @@ address a {
 
   .join-quote-panel {
     padding: 22px 0 0 20px;
+  }
+
+  .contact-qr-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 22px;
+  }
+
+  .contact-qr-thumb {
+    justify-self: start;
+    width: 136px;
+  }
+
+  .qr-lightbox {
+    padding: 18px;
   }
 
   .timeline-list article {
