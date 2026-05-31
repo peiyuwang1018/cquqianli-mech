@@ -892,9 +892,10 @@ main,
 .project-card h2 {
   margin: 0;
   color: var(--text);
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.32;
+  line-height: 1.28;
+  white-space: nowrap;
 }
 
 .project-card p {
@@ -2120,7 +2121,7 @@ address a {
   }
 
   .project-card h2 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .project-list article {
