@@ -1882,6 +1882,13 @@ td {
   opacity: 0.78;
 }
 
+.join-visual-photo img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  opacity: 1;
+}
+
 .join-visual figcaption {
   position: absolute;
   inset: 0;
