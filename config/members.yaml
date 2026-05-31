@@ -24,11 +24,11 @@ advisors:
     intro: 提供工程机器人、机构集成与可靠性测试方向的指导。
   - name: 覃宇铭
     title: 顾问
-    photo: ""
+    photo: assets/photos/覃宇铭.jpg
     intro: 提供步兵整机、运动机构与赛季迭代方向的指导。
   - name: 粟宇
     title: 顾问
-    photo: ""
+    photo: assets/photos/粟宇.jpg
     intro: 提供英雄、发射链路与模块验证方向的指导。
   - name: 李晨弘
     title: 顾问
