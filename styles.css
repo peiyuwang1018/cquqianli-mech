@@ -2137,6 +2137,30 @@ address a {
   line-height: 1;
 }
 
+.download-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  height: 30px;
+  padding: 0 12px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 14px;
+  line-height: 1;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.download-action:hover,
+.download-action:focus-visible {
+  background: var(--accent);
+  color: var(--bg);
+  transform: translateY(-1px);
+}
+
 .acknowledgements {
   padding-bottom: 76px;
 }
