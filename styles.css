@@ -744,7 +744,7 @@ main,
 }
 
 .project-summary-title em {
-  color: var(--accent-rose);
+  color: var(--accent);
   font-family: "Lora", serif;
   font-size: 13px;
   font-style: normal;
