@@ -499,6 +499,7 @@ main,
   font-family: "Lora", serif;
 }
 
+.text-link.no-auto-arrow::after,
 .inline-link.no-auto-arrow::after {
   content: "";
 }
