@@ -4,6 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>加入我们 | 重庆大学千里战队机械组</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.dataset.theme = savedTheme || preferredTheme;
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7H7TDZTBG"></script>
@@ -42,7 +53,7 @@
           <h2>入门前的坦白</h2>
           <p>RoboMaster 不是短线比赛，而是一个你要把至少一到两年光阴真正奉献进去的地方。艰苦的工作、压缩的休闲、备赛期与课业的冲突——这些都是真实存在的代价。</p>
           <p>如果你是为了加分、绩点，这里并不是一个高性价比的选择。你需要有摒弃以绩点为核心的传统大学价值观的勇气，构建起属于自己的评价体系。本科培养方案永远只能兼顾大多数人，也存在滞后性。在这里，你需要成为自己的引路人。</p>
-          <p>很高兴你读完这段话。招新的信息在页末，但是如果你是第一次来，请你耐心看完前面的内容。</p>
+          <p>很高兴你读完这段话。招新的信息在页末，但是如果你是第一次来，请你耐心看完前面的内容。<a class="inline-link no-auto-arrow" href="contact.html">跳转至 27 赛季夏季招新 →</a></p>
         </article>
         <figure class="join-visual join-visual-photo">
           <img src="assets/join_us.jpg" alt="RoboMaster 赛场上的队员欢呼瞬间" />

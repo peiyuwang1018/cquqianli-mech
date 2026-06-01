@@ -664,6 +664,16 @@ main,
   background: var(--accent);
 }
 
+.past-members-section .section-heading {
+  max-width: none;
+}
+
+@media (min-width: 900px) {
+  .past-members-section .section-heading p {
+    white-space: nowrap;
+  }
+}
+
 .intro-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1619,6 +1629,22 @@ body[data-page="join"] .page-hero > p {
   font-size: 13px;
 }
 
+.team-section .section-heading h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-heading-icon {
+  flex: 0 0 auto;
+  width: 27px;
+  height: 27px;
+  color: var(--accent);
+  fill: currentColor;
+  transform: translateY(1px);
+  transition: color 240ms ease;
+}
+
 .team-section:has(.advisor-row) {
   padding-top: 42px;
   padding-bottom: 18px;
@@ -1644,6 +1670,20 @@ body[data-page="join"] .page-hero > p {
 
 .formal-row + .member-detail-strip {
   min-height: 72px;
+  margin-top: 8px;
+}
+
+.team-section:has(.trainee-row) {
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+
+.team-section:has(.trainee-row) .section-heading {
+  margin-bottom: 24px;
+}
+
+.trainee-row + .member-detail-strip {
+  min-height: 58px;
   margin-top: 8px;
 }
 
@@ -2053,15 +2093,104 @@ body[data-page="join"] .page-hero > p {
 
 .name-list {
   display: grid;
-  gap: 14px;
+  gap: 18px;
   border-top: 1px solid var(--line);
+  padding-top: 18px;
 }
 
-.name-list span {
-  display: block;
-  padding: 16px 0;
+.past-season {
+  display: grid;
+  gap: 18px;
+  padding-bottom: 18px;
   border-bottom: 1px solid var(--soft-line);
-  color: var(--muted);
+}
+
+.past-season h3 {
+  margin: 0;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.past-member-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin-top: 14px;
+}
+
+.past-member-tag,
+.past-member-names span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  font-weight: 500;
+}
+
+.past-member-tag {
+  min-width: 78px;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.past-member-tag.tag-formal,
+.past-member-names span.tag-formal {
+  color: #7a5200;
+  background: #fff4d4;
+  border-color: #e5bd55;
+}
+
+.past-member-tag.tag-trainee,
+.past-member-names span.tag-trainee {
+  color: #4f5661;
+  background: #f3f5f7;
+  border-color: #c6cdd5;
+}
+
+.past-member-tag.tag-advisor,
+.past-member-names span.tag-advisor {
+  color: #5c3d91;
+  background: #eee6ff;
+  border-color: #a98de0;
+}
+
+.past-member-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+
+.past-member-names span {
+  padding: 3px 9px;
+  line-height: 1.45;
+  transition:
+    background-color 240ms ease,
+    border-color 240ms ease,
+    color 240ms ease;
+}
+
+:root[data-theme="dark"] .past-member-tag.tag-formal,
+:root[data-theme="dark"] .past-member-names span.tag-formal {
+  color: #ffd77a;
+  background: rgba(255, 207, 92, 0.12);
+  border-color: rgba(255, 207, 92, 0.48);
+}
+
+:root[data-theme="dark"] .past-member-tag.tag-trainee,
+:root[data-theme="dark"] .past-member-names span.tag-trainee {
+  color: #d9dde4;
+  background: rgba(201, 208, 218, 0.11);
+  border-color: rgba(201, 208, 218, 0.36);
+}
+
+:root[data-theme="dark"] .past-member-tag.tag-advisor,
+:root[data-theme="dark"] .past-member-names span.tag-advisor {
+  color: #eadfff;
+  background: rgba(136, 93, 207, 0.2);
+  border-color: rgba(186, 154, 244, 0.58);
 }
 
 .alumni-board {
@@ -2853,7 +2982,7 @@ address a {
 
 .text-link::after,
 .inline-link::after {
-  content: "  ->";
+  content: "  →";
   font-family: "Lora", serif;
 }
 
@@ -3525,6 +3654,10 @@ address a {
   .member-detail-strip {
     min-height: 170px;
     max-width: none;
+  }
+
+  .past-member-tag {
+    justify-self: start;
   }
 
   .unit-card {

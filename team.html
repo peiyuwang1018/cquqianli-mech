@@ -4,6 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>部门成员 | 重庆大学千里战队机械组</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.dataset.theme = savedTheme || preferredTheme;
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7H7TDZTBG"></script>
@@ -39,7 +50,7 @@
 
       <section class="section-block team-section">
         <div class="section-heading">
-          <h2>顾问组</h2>
+          <h2><svg class="team-heading-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z" /></svg>顾问组</h2>
         </div>
         <div class="member-row advisor-row">
           <article class="member-card" tabindex="0" data-intro="负责顾问组协调、培养体系建设与长期技术路线支持。"><figure class="avatar-placeholder"><img src="assets/photos/汪沛宇.jpg" alt="wpy" /></figure><h3>汪沛宇</h3><p>顾问负责人</p></article>
@@ -56,7 +67,7 @@
 
       <section class="section-block team-section">
         <div class="section-heading">
-          <h2>正式队员</h2>
+          <h2><svg class="team-heading-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4A4 4 0 0 0 6 8A4 4 0 0 0 10 12A4 4 0 0 0 14 8A4 4 0 0 0 10 4M10 6A2 2 0 0 1 12 8A2 2 0 0 1 10 10A2 2 0 0 1 8 8A2 2 0 0 1 10 6M10 13C7.33 13 2 14.34 2 17V20H12.5C12.18 19.23 12 18.39 12 17.5C12 15.72 12.77 14.12 14 13C12.68 13 11.36 13 10 13M10 15C10.9 15 11.73 15.07 12.5 15.2C12.18 15.75 12 16.36 12 17V18H4V17C4 16.29 7.03 15 10 15M19.43 18.02C19.47 17.85 19.5 17.68 19.5 17.5C19.5 17.32 19.47 17.15 19.43 16.98L20.54 16.12L19.54 14.39L18.23 14.92C17.95 14.7 17.64 14.5 17.3 14.39L17.1 13H15.1L14.9 14.39C14.56 14.5 14.25 14.7 13.97 14.92L12.66 14.39L11.66 16.12L12.77 16.98C12.73 17.15 12.7 17.32 12.7 17.5C12.7 17.68 12.73 17.85 12.77 18.02L11.66 18.88L12.66 20.61L13.97 20.08C14.25 20.3 14.56 20.5 14.9 20.61L15.1 22H17.1L17.3 20.61C17.64 20.5 17.95 20.3 18.23 20.08L19.54 20.61L20.54 18.88L19.43 18.02M16.1 18.75A1.25 1.25 0 1 1 16.1 16.25A1.25 1.25 0 0 1 16.1 18.75Z" /></svg>正式队员</h2>
         </div>
         <div class="member-row formal-row">
           <article class="member-card" tabindex="0" data-intro="负责步哨方向步兵底盘设计、研发与迭代，参与空中机器人机身方案设计，并承担机械组成员培训与部分管理工作。"><figure class="avatar-placeholder"><img src="assets/photos/张天煦.jpg" alt="ztx" /></figure><div class="member-card-head"><h3>张天煦</h3><span class="unit-tag tag-sentry">步哨</span></div><p class="member-role"></p></article>
@@ -79,7 +90,7 @@
 
       <section class="section-block team-section">
         <div class="section-heading">
-          <h2>梯队队员</h2>
+          <h2><svg class="team-heading-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 4C18.21 4 20 5.79 20 8S18.21 12 16 12 12 10.21 12 8 13.79 4 16 4M16 6C14.9 6 14 6.9 14 8S14.9 10 16 10 18 9.1 18 8 17.1 6 16 6M16 13C18.67 13 24 14.34 24 17V20H8V17C8 14.34 13.33 13 16 13M16 14.9C13.03 14.9 10 16.19 10 17V18H22V17C22 16.19 18.97 14.9 16 14.9M8 6V9H11V11H8V14H6V11H3V9H6V6H8Z" /></svg>梯队队员</h2>
         </div>
         <div class="member-row trainee-row">
           <article class="member-card" tabindex="0" data-intro="参与英雄方向基础训练、模块复刻与赛季项目辅助任务。"><figure class="avatar-placeholder"></figure><div class="member-card-head"><h3>姓名</h3><span class="unit-tag tag-hero">英雄</span></div></article>
@@ -91,17 +102,33 @@
         <div class="member-intro-strip member-detail-strip is-visible is-default" data-default-intro="梯队队员参与基础训练、大作业和项目辅助任务，后续可在卡片中补充训练方向与负责模块。" aria-live="polite">梯队队员参与基础训练、大作业和项目辅助任务，后续可在卡片中补充训练方向与负责模块。</div>
       </section>
 
-      <section class="section-block team-section">
+      <section class="section-block team-section past-members-section">
         <div class="section-heading">
-          <h2>往届队员名单</h2>
-          <p>此处仅保留名单，不放照片。后续可按入队年份、负责方向或毕业年份整理。</p>
+          <h2><svg class="team-heading-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" /></svg>往届队员名单</h2>
+          <p>此名单职责以最终超级对抗赛报名系统为准，不代表赛季初职责。未通过完整形态考核并且参加超级对抗赛的，以赛季末贡献度评定为准。</p>
+          <div class="past-member-legend" aria-label="往届队员类型图例">
+            <span class="past-member-tag tag-advisor">顾问</span>
+            <span class="past-member-tag tag-formal">正式队员</span>
+            <span class="past-member-tag tag-trainee">梯队队员</span>
+          </div>
         </div>
         <div class="name-list">
-          <span>2025 届：姓名、姓名、姓名、姓名</span>
-          <span>2024 届：姓名、姓名、姓名、姓名</span>
-          <span>2023 届：姓名、姓名、姓名、姓名</span>
-          <span>2022 届：姓名、姓名、姓名、姓名</span>
-          <span>2021 届：姓名、姓名、姓名、姓名</span>
+          <section class="past-season">
+            <h3>2025 赛季</h3>
+            <div class="past-member-names">
+              <span class="tag-advisor">洪瑞珑</span><span class="tag-advisor">韦许韬</span><span class="tag-advisor">张博洋</span>
+              <span class="tag-formal">郭丁赫</span><span class="tag-formal">江晨曦</span><span class="tag-formal">覃宇铭</span><span class="tag-formal">全锐</span><span class="tag-formal">粟宇</span><span class="tag-formal">谭虹利</span><span class="tag-formal">汪沛宇</span><span class="tag-formal">王巍澄</span><span class="tag-formal">张天煦</span>
+              <span class="tag-trainee">樊亦媛</span><span class="tag-trainee">蓝金桥</span><span class="tag-trainee">李旭亮</span><span class="tag-trainee">廖海滢</span><span class="tag-trainee">孙旭</span><span class="tag-trainee">孙一涵</span>
+            </div>
+          </section>
+          <section class="past-season">
+            <h3>2024 赛季</h3>
+            <div class="past-member-names">
+              <span class="tag-advisor">傅佳键</span>
+              <span class="tag-formal">冯鑫</span><span class="tag-formal">符兴毅</span><span class="tag-formal">郭丁赫</span><span class="tag-formal">何煦</span><span class="tag-formal">洪瑞珑</span><span class="tag-formal">李晨弘</span><span class="tag-formal">李页丹</span><span class="tag-formal">吕沐城</span><span class="tag-formal">覃宇铭</span><span class="tag-formal">全锐</span><span class="tag-formal">粟宇</span><span class="tag-formal">汪沛宇</span><span class="tag-formal">韦许韬</span><span class="tag-formal">吴奕林</span><span class="tag-formal">张博洋</span>
+              <span class="tag-trainee">柴嘉蔚</span><span class="tag-trainee">李兆贺</span><span class="tag-trainee">唐晨</span><span class="tag-trainee">王宇航</span><span class="tag-trainee">韦现严</span><span class="tag-trainee">杨俊森</span><span class="tag-trainee">左庆远</span>
+            </div>
+          </section>
         </div>
       </section>
     </main>
