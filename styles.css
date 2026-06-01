@@ -788,6 +788,7 @@ body[data-page="join"] .page-hero > p {
   position: relative;
   display: flex;
   align-items: center;
+  gap: 22px;
   min-height: 96px;
   padding: 24px 72px 24px 28px;
   cursor: pointer;
@@ -813,6 +814,19 @@ body[data-page="join"] .page-hero > p {
 
 .project-accordion[open] summary::after {
   transform: translateY(-35%) rotate(225deg);
+}
+
+.project-summary-number {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding-top: 8px;
+  color: var(--accent);
+  font-family: "Lora", serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  transition: color 240ms ease;
 }
 
 .project-summary-title {
@@ -1605,6 +1619,34 @@ body[data-page="join"] .page-hero > p {
   font-size: 13px;
 }
 
+.team-section:has(.advisor-row) {
+  padding-top: 42px;
+  padding-bottom: 18px;
+}
+
+.team-section:has(.advisor-row) .section-heading {
+  margin-bottom: 24px;
+}
+
+.advisor-row + .member-detail-strip {
+  min-height: 58px;
+  margin-top: 8px;
+}
+
+.team-section:has(.formal-row) {
+  padding-top: 42px;
+  padding-bottom: 24px;
+}
+
+.team-section:has(.formal-row) .section-heading {
+  margin-bottom: 24px;
+}
+
+.formal-row + .member-detail-strip {
+  min-height: 72px;
+  margin-top: 8px;
+}
+
 .trainee-row {
   grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: 22px 14px;
@@ -1986,6 +2028,22 @@ body[data-page="join"] .page-hero > p {
     opacity 100ms linear,
     transform 100ms linear,
     color 240ms ease;
+}
+
+.member-detail-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 104px;
+  max-width: 1120px;
+  overflow: visible;
+}
+
+.member-detail-strip.is-default {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: center;
 }
 
 .member-intro-strip.is-visible {
@@ -3151,6 +3209,7 @@ address a {
 
   .project-accordion summary {
     min-height: auto;
+    gap: 14px;
     padding: 20px 54px 20px 20px;
   }
 
@@ -3160,6 +3219,11 @@ address a {
 
   .project-accordion summary strong {
     font-size: 24px;
+  }
+
+  .project-summary-number {
+    padding-top: 7px;
+    font-size: 13px;
   }
 
   .project-summary-title {
@@ -3456,6 +3520,11 @@ address a {
   .trainee-row .member-card:hover .avatar-placeholder,
   .trainee-row .member-card:focus-visible .avatar-placeholder {
     width: min(100%, 115px);
+  }
+
+  .member-detail-strip {
+    min-height: 170px;
+    max-width: none;
   }
 
   .unit-card {

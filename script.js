@@ -246,13 +246,23 @@ document.querySelectorAll(".team-section").forEach((section) => {
   const introStrip = section.querySelector(".member-intro-strip");
   const memberRow = section.querySelector(".member-row");
   const cards = section.querySelectorAll(".member-card[data-intro]");
+  const defaultIntro = introStrip?.dataset.defaultIntro || "";
 
   if (!introStrip || !cards.length) return;
+
+  const showDefaultIntro = () => {
+    introStrip.replaceChildren();
+    introStrip.classList.add("is-default");
+    introStrip.textContent = defaultIntro;
+    introStrip.classList.toggle("is-visible", Boolean(defaultIntro));
+  };
 
   const showIntro = (card) => {
     cards.forEach((item) => item.classList.remove("is-active"));
     card.classList.add("is-active");
     memberRow?.classList.add("has-active");
+    introStrip.replaceChildren();
+    introStrip.classList.remove("is-default");
     introStrip.textContent = card.dataset.intro || "";
     introStrip.classList.toggle("is-visible", Boolean(card.dataset.intro));
   };
@@ -260,8 +270,12 @@ document.querySelectorAll(".team-section").forEach((section) => {
   const hideIntro = () => {
     cards.forEach((item) => item.classList.remove("is-active"));
     memberRow?.classList.remove("has-active");
-    introStrip.classList.remove("is-visible");
-    introStrip.textContent = "";
+    if (defaultIntro) {
+      showDefaultIntro();
+      return;
+    }
+    introStrip.classList.remove("is-visible", "is-default");
+    introStrip.replaceChildren();
   };
 
   cards.forEach((card) => {
