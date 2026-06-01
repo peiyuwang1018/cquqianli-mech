@@ -128,6 +128,62 @@ document.querySelectorAll(".project-accordion").forEach((accordion) => {
   });
 });
 
+document.querySelectorAll("[data-equipment-carousel]").forEach((carousel) => {
+  const track = carousel.querySelector(".equipment-carousel-track");
+  const slides = Array.from(carousel.querySelectorAll(".equipment-slide"));
+  const prevButton = carousel.querySelector(".equipment-carousel-prev");
+  const nextButton = carousel.querySelector(".equipment-carousel-next");
+  const dotsWrap = carousel.querySelector(".equipment-carousel-dots");
+  let activeIndex = 0;
+
+  if (!track || !slides.length || !prevButton || !nextButton || !dotsWrap) return;
+
+  const dots = slides.map((_, index) => {
+    const dot = document.createElement("button");
+    dot.className = "equipment-carousel-dot";
+    dot.type = "button";
+    dot.setAttribute("aria-label", `查看第 ${index + 1} 张图片`);
+    dot.addEventListener("click", () => updateEquipmentCarousel(index));
+    dotsWrap.appendChild(dot);
+    return dot;
+  });
+
+  const updateEquipmentCarousel = (nextIndex) => {
+    activeIndex = (nextIndex + slides.length) % slides.length;
+    track.style.transform = `translateX(-${activeIndex * 100}%)`;
+    prevButton.disabled = activeIndex === 0;
+    nextButton.disabled = activeIndex === slides.length - 1;
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("is-active", index === activeIndex);
+      dot.setAttribute("aria-current", index === activeIndex ? "true" : "false");
+    });
+  };
+
+  slides.forEach((slide) => {
+    const image = slide.querySelector("img");
+    if (!image) return;
+    if (image.complete && image.naturalWidth > 0) {
+      slide.classList.add("is-loaded");
+    }
+    if (image.complete && image.naturalWidth === 0) {
+      image.classList.add("is-missing");
+    }
+    image.addEventListener("error", () => {
+      image.classList.add("is-missing");
+      slide.classList.remove("is-loaded");
+    });
+    image.addEventListener("load", () => {
+      image.classList.remove("is-missing");
+      slide.classList.add("is-loaded");
+    });
+  });
+
+  prevButton.addEventListener("click", () => updateEquipmentCarousel(activeIndex - 1));
+  nextButton.addEventListener("click", () => updateEquipmentCarousel(activeIndex + 1));
+
+  updateEquipmentCarousel(0);
+});
+
 const quoteStage = document.querySelector("[data-quote-stage]");
 const quoteText = document.querySelector("[data-quote-text]");
 const quoteSource = document.querySelector("[data-quote-source]");
