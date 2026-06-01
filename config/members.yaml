@@ -55,7 +55,7 @@ formal_members:
     role: ""
     intro: 开展飞镖方向结构方案、装配测试与赛季迭代。
     grade: ""
-    photo: ""
+    photo: assets/photos/聂山淳.jpg
     projects: []
   - name: 赵乙璠
     unit: 工程
@@ -76,7 +76,7 @@ formal_members:
     role: ""
     intro: 开展英雄方向结构设计、发射链路与维护优化。
     grade: ""
-    photo: ""
+    photo: assets/photos/卢裕阳.jpg
     projects: []
   - name: 高阳洋
     unit: 英雄
@@ -97,7 +97,7 @@ formal_members:
     role: ""
     intro: 开展工程方向结构设计、加工装配与测试复盘。
     grade: ""
-    photo: ""
+    photo: assets/photos/陈夏菲.jpg
     projects: []
   - name: 徐进
     unit: 步哨
@@ -111,7 +111,7 @@ formal_members:
     role: ""
     intro: 开展空中方向轻量化结构、任务载荷与维护设计。
     grade: ""
-    photo: ""
+    photo: assets/photos/张郭浩.jpg
     projects: []
   - name: 胡茗媛
     unit: 飞镖
