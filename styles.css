@@ -22,7 +22,7 @@
   --green: #5cfc90;
   --max-width: 1180px;
   --nav-width: 1280px;
-  --anchor-offset: 118px;
+  --anchor-offset: 83px;
 }
 
 :root[data-theme="dark"] {
@@ -55,10 +55,6 @@ html {
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-padding-top: var(--anchor-offset);
-}
-
-[id] {
-  scroll-margin-top: var(--anchor-offset);
 }
 
 ::view-transition-old(root),
@@ -3619,7 +3615,7 @@ address a {
 
 @media (max-width: 760px) {
   :root {
-    --anchor-offset: 86px;
+    --anchor-offset: 69px;
   }
 
   body {

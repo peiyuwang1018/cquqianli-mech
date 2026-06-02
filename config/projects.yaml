@@ -380,6 +380,86 @@ projects:
       gallery: []
     notes: 置顶展示。
 
+  - id: daily-concept-checkin
+    title: 日供一卒 概念自主打卡
+    category: culture_training
+    season: 长期
+    display_order: 10
+    status: 长期维护
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 培训工作 / 自主学习
+    people:
+      lead: ""
+      participants: []
+    summary: 通过长期自主打卡积累概念理解、结构观察与工程表达，形成持续学习的微型训练机制。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: pivot-wiki-knowledge-base
+    title: Pivot Wiki 知识库网站
+    category: culture_training
+    season: 长期
+    display_order: 20
+    status: 长期维护
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 培训工作 / 知识库建设
+    people:
+      lead: ""
+      participants: []
+    summary: 沉淀机械组培训材料、项目复盘、工具链经验与工程知识，服务长期传承和新人自学。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: engineering-product-frontier-salon
+    title: 工程产品分析/前沿分享沙龙
+    category: culture_training
+    season: 长期
+    display_order: 30
+    status: 长期维护
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 培训工作 / 分享交流
+    people:
+      lead: ""
+      participants: []
+    summary: 围绕工程产品、机器人行业趋势和先进机构方案开展分享讨论，拓展成员的工程视野。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: basic-training-framework
+    title: 基础培训架构
+    category: culture_training
+    season: 长期
+    display_order: 40
+    status: 长期维护
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 培训工作 / 培训体系建设
+    people:
+      lead: ""
+      participants: []
+    summary: 建设从工具链、基础机构到项目实践的培训框架，让新人能够按阶段建立机械研发能力。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
   - id: tech-core-exchange-station-2026
     title: 科技核心兑换站
     category: infrastructure
