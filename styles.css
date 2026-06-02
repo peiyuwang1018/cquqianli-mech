@@ -2157,6 +2157,13 @@ body[data-page="join"] .page-hero > p {
   border-color: #a98de0;
 }
 
+.past-member-tag.tag-left,
+.past-member-names span.tag-left {
+  color: #2f2f2f;
+  background: #ffffff;
+  border-color: #d6d6d6;
+}
+
 .past-member-names {
   display: flex;
   flex-wrap: wrap;
@@ -2191,6 +2198,13 @@ body[data-page="join"] .page-hero > p {
   color: #eadfff;
   background: rgba(136, 93, 207, 0.2);
   border-color: rgba(186, 154, 244, 0.58);
+}
+
+:root[data-theme="dark"] .past-member-tag.tag-left,
+:root[data-theme="dark"] .past-member-names span.tag-left {
+  color: #f1f1f1;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.34);
 }
 
 .alumni-board {
