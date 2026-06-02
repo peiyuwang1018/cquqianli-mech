@@ -2705,6 +2705,11 @@ address a {
   border-bottom: 1px solid currentColor;
 }
 
+.contact-side {
+  display: grid;
+  gap: 16px;
+}
+
 .contact-media {
   min-height: 220px;
 }
@@ -2754,6 +2759,48 @@ address a {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.recruitment-article-card {
+  display: grid;
+  gap: 8px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  background: var(--card-bg);
+  color: var(--text);
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.recruitment-article-card:hover,
+.recruitment-article-card:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+.recruitment-article-card span {
+  width: fit-content;
+  padding: 2px 8px;
+  border: 1px solid currentColor;
+  color: var(--accent);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.recruitment-article-card strong {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.recruitment-article-card small {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .qr-lightbox {
