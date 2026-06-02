@@ -68,6 +68,11 @@ themeToggle?.addEventListener("click", () => {
 
 links.forEach((link) => {
   link.classList.toggle("is-active", link.dataset.nav === currentPage);
+  if (link.closest(".nav-dropdown")) {
+    const linkPath = new URL(link.getAttribute("href"), window.location.href).pathname.split("/").pop();
+    const pagePath = window.location.pathname.split("/").pop() || "index.html";
+    link.classList.toggle("is-active", linkPath === pagePath);
+  }
   link.addEventListener("click", () => {
     navLinks.classList.remove("is-open");
     navToggle?.setAttribute("aria-expanded", "false");
