@@ -66,18 +66,30 @@ themeToggle?.addEventListener("click", () => {
   setTheme(root.dataset.theme === "dark" ? "light" : "dark", { animated: true });
 });
 
+function syncNavState() {
+  const pagePath = window.location.pathname.split("/").pop() || "index.html";
+  const currentHash = window.location.hash;
+
+  links.forEach((link) => {
+    link.classList.toggle("is-active", link.dataset.nav === currentPage);
+    if (link.closest(".nav-dropdown")) {
+      const linkUrl = new URL(link.getAttribute("href"), window.location.href);
+      const linkPath = linkUrl.pathname.split("/").pop() || "index.html";
+      const hashMatches = linkUrl.hash ? currentHash === linkUrl.hash : true;
+      link.classList.toggle("is-active", linkPath === pagePath && hashMatches);
+    }
+  });
+}
+
 links.forEach((link) => {
-  link.classList.toggle("is-active", link.dataset.nav === currentPage);
-  if (link.closest(".nav-dropdown")) {
-    const linkPath = new URL(link.getAttribute("href"), window.location.href).pathname.split("/").pop();
-    const pagePath = window.location.pathname.split("/").pop() || "index.html";
-    link.classList.toggle("is-active", linkPath === pagePath);
-  }
   link.addEventListener("click", () => {
     navLinks.classList.remove("is-open");
     navToggle?.setAttribute("aria-expanded", "false");
   });
 });
+
+syncNavState();
+window.addEventListener("hashchange", syncNavState);
 
 document.querySelectorAll(".project-carousel-shell").forEach((shell) => {
   const carousel = shell.querySelector(".project-carousel");

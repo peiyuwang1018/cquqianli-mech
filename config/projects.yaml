@@ -3,6 +3,7 @@
 # - whole_robot      整机研发
 # - module_branch    模块/支线研发
 # - infrastructure   基础设施建设
+# - culture_training 培训工作
 # - training         梯队基础训练项目
 #
 # 维护建议：
@@ -14,6 +15,7 @@ categories:
   whole_robot: 整机研发
   module_branch: 模块/支线研发
   infrastructure: 基础设施建设
+  culture_training: 培训工作
   training: 梯队基础训练项目
 
 projects:
@@ -359,7 +361,7 @@ projects:
 
   - id: qianli-museum-specimen-library
     title: 千里博物馆-标本库
-    category: infrastructure
+    category: culture_training
     season: 长期
     pinned: true
     display_order: 0
@@ -367,11 +369,11 @@ projects:
     lifecycle:
       start: ""
       end: ""
-      phase: 长期归档 / 展示建设
+      phase: 培训工作 / 标本库建设
     people:
       lead: ""
       participants: []
-    summary: 长期归档机械组历史样机、关键零件、赛季资料与工程标本。
+    summary: 长期归档机械组历史样机、关键零件、赛季资料与工程标本，用于新人培训、复盘展示与队史传承。
     outcomes: []
     assets:
       cover: ""
