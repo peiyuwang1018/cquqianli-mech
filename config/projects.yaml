@@ -117,7 +117,7 @@ projects:
     summary: 面向 2024 赛季分区赛步兵需求开展舵轮步兵整机机械系统研发。
     outcomes: []
     assets:
-      cover: assets/images/project/robot/24赛季舵轮.jpg
+      cover: assets/images/project/robot/24分区赛舵轮.jpg
       gallery: []
     notes: ""
 
@@ -137,7 +137,7 @@ projects:
     summary: 面向 2024 赛季国赛阶段需求开展舵轮机器人机械系统研发。
     outcomes: []
     assets:
-      cover: assets/images/project/robot/24赛季舵轮.jpg
+      cover: assets/images/project/robot/24复活赛舵轮.jpg
       gallery: []
     notes: ""
 
@@ -157,7 +157,7 @@ projects:
     summary: 面向 2024 赛季国赛阶段需求开展平衡步兵机械系统研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/training/博物馆.jpg
       gallery: []
     notes: ""
 
@@ -177,7 +177,7 @@ projects:
     summary: 面向 2024 赛季工程机器人任务开展 SCARA 工程机械系统研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/training/日拱一卒.png
       gallery: []
     notes: ""
 
@@ -217,7 +217,7 @@ projects:
     summary: 2024 赛季并联腿步兵机械系统方案设计、装配调试与赛季迭代。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/training/Pivot Wiki.jpg
       gallery: []
     notes: ""
 
@@ -237,7 +237,7 @@ projects:
     summary: 面向大弹丸发射稳定性与维护便利性的 42mm 四摩擦发射机构研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/robot/四摩擦英雄.jpg
       gallery: []
     notes: ""
 
@@ -257,7 +257,7 @@ projects:
     summary: 面向工程机器人取放任务的自适应夹持机构设计与验证。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/工程自适应夹爪.png
       gallery: []
     notes: ""
 
@@ -277,7 +277,7 @@ projects:
     summary: 围绕能量单元收纳、定位与可靠释放开展机械结构研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/工程存矿单元.jpg
       gallery: []
     notes: ""
 
@@ -357,7 +357,7 @@ projects:
     summary: 基于 3508 动力系统的舵轮模组结构设计、装配与维护方案探索。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/3508舵轮模块.jpg
       gallery: []
     notes: ""
 
@@ -598,7 +598,7 @@ projects:
     summary: 建设从工具链、基础机构到项目实践的培训框架，让新人能够按阶段建立机械研发能力。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/training/培训基础架构.png
       gallery: []
     notes: ""
 
@@ -638,15 +638,15 @@ projects:
     summary: 和大创项目、宣传周边、个人兴趣、课设或毕设相关的番外项目，战队与机械组视情况予以支持。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/extra/网球机.jpg
       gallery: []
     notes: ""
 
-  - id: robotic-fish
-    title: 机器鱼
+  - id: ferris-wheel-screw-organizer
+    title: 摩天轮螺丝收纳盒
     category: extra_interest
     season: 番外
-    display_order: 30
+    display_order: 40
     status: 待补充
     lifecycle:
       start: ""
@@ -655,10 +655,10 @@ projects:
     people:
       lead: ""
       participants: []
-    summary: 和大创项目、宣传周边、个人兴趣、课设或毕设相关的番外项目，战队与机械组视情况予以支持。
+    summary: 围绕宣传周边、个人兴趣和 3D 打印实践展开的番外项目。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/extra/摩天轮螺丝收纳盒.jpg
       gallery: []
     notes: ""
 
@@ -678,7 +678,7 @@ projects:
     summary: 2026 赛季科技核心兑换站设计与建设。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/infrastructure/科技核心.jpg
       gallery: []
     notes: ""
 
@@ -718,7 +718,7 @@ projects:
     summary: 2026 赛季工程资源岛设计与建设。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/infrastructure/资源岛.jpg
       gallery: []
     notes: ""
 
@@ -738,7 +738,7 @@ projects:
     summary: 2025 赛季能量机关相关训练与测试设施。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/infrastructure/能量机关.jpg
       gallery: []
     notes: ""
 
@@ -758,7 +758,7 @@ projects:
     summary: 2025 赛季用于射击、识别或测试任务的靶车平台。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/infrastructure/靶车.jpg
       gallery: []
     notes: ""
 
@@ -798,7 +798,7 @@ projects:
     summary: 2024 赛季前哨站相关训练与测试设施。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/infrastructure/前哨站.jpg
       gallery: []
     notes: ""
 

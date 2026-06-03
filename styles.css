@@ -2777,6 +2777,10 @@ body[data-page="join"] .page-hero > p {
   object-fit: contain;
 }
 
+.alumni-logo-square.logo-nus img {
+  transform: scale(0.95);
+}
+
 .text-logo span {
   color: var(--accent-rose);
   font-family: "Lora", serif;
