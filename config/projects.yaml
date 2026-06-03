@@ -21,6 +21,26 @@ categories:
   training: 梯队基础训练项目
 
 projects:
+  - id: four-friction-hero-2026
+    title: 四摩擦英雄
+    category: whole_robot
+    season: "2026"
+    display_order: 202600
+    status: 研发中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 樊亦媛
+      participants: []
+    summary: 面向 2026 赛季英雄机器人任务，开展四摩擦发射与整机结构集成。
+    outcomes: []
+    assets:
+      cover: assets/images/project/robot/四摩擦英雄.jpg
+      gallery: []
+    notes: ""
+
   - id: aerial-robot-2025
     title: 25赛季无人机
     category: whole_robot
@@ -37,7 +57,7 @@ projects:
     summary: 面向 2025 赛季空中机器人任务开展无人机整机机械系统研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/robot/25无人机.jpg
       gallery: []
     notes: ""
 
@@ -57,7 +77,7 @@ projects:
     summary: 面向 2025 赛季步兵需求开展串联腿底盘与整机机械系统研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/robot/串联腿步兵.jpg
       gallery: []
     notes: ""
 
@@ -157,7 +177,7 @@ projects:
     summary: 面向 2024 赛季国赛阶段需求开展平衡步兵机械系统研发。
     outcomes: []
     assets:
-      cover: assets/images/project/training/博物馆.jpg
+      cover: ""
       gallery: []
     notes: ""
 
@@ -177,7 +197,7 @@ projects:
     summary: 面向 2024 赛季工程机器人任务开展 SCARA 工程机械系统研发。
     outcomes: []
     assets:
-      cover: assets/images/project/training/日拱一卒.png
+      cover: ""
       gallery: []
     notes: ""
 
@@ -217,7 +237,7 @@ projects:
     summary: 2024 赛季并联腿步兵机械系统方案设计、装配调试与赛季迭代。
     outcomes: []
     assets:
-      cover: assets/images/project/training/Pivot Wiki.jpg
+      cover: ""
       gallery: []
     notes: ""
 
@@ -253,7 +273,7 @@ projects:
       phase: 模块方案设计 / 样机验证
     people:
       lead: 赵乙璠
-      participants: []
+      participants: [陈夏菲]
     summary: 面向工程机器人取放任务的自适应夹持机构设计与验证。
     outcomes: []
     assets:
@@ -297,7 +317,7 @@ projects:
     summary: 面向特殊地形与登岛任务的小型底盘机构探索。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/小狗登岛底盘.jpg
       gallery: []
     notes: ""
 
@@ -673,8 +693,8 @@ projects:
       end: ""
       phase: 方案设计 / 制造验证
     people:
-      lead: ""
-      participants: [高阳洋, 张铭珂]
+      lead: 高阳洋
+      participants: [张铭珂]
     summary: 2026 赛季科技核心兑换站设计与建设。
     outcomes: []
     assets:
@@ -693,8 +713,8 @@ projects:
       end: ""
       phase: 方案设计 / 制造验证
     people:
-      lead: ""
-      participants: [陈夏菲]
+      lead: 陈夏菲
+      participants: []
     summary: 2026 赛季折叠便携基地设计与建设。
     outcomes: []
     assets:
@@ -713,8 +733,8 @@ projects:
       end: ""
       phase: 方案设计 / 制造验证
     people:
-      lead: ""
-      participants: [陈夏菲]
+      lead: 陈夏菲
+      participants: []
     summary: 2026 赛季工程资源岛设计与建设。
     outcomes: []
     assets:
@@ -733,8 +753,8 @@ projects:
       end: ""
       phase: 赛季基础设施建设
     people:
-      lead: ""
-      participants: [全锐]
+      lead: 全锐
+      participants: []
     summary: 2025 赛季能量机关相关训练与测试设施。
     outcomes: []
     assets:
@@ -753,8 +773,8 @@ projects:
       end: ""
       phase: 赛季基础设施建设
     people:
-      lead: ""
-      participants: [汪沛宇, 张博洋, 全锐, 张郭浩]
+      lead: 汪沛宇
+      participants: [张博洋, 全锐, 张郭浩]
     summary: 2025 赛季用于射击、识别或测试任务的靶车平台。
     outcomes: []
     assets:
@@ -773,8 +793,8 @@ projects:
       end: ""
       phase: 赛季基础设施建设
     people:
-      lead: ""
-      participants: [汪沛宇]
+      lead: 汪沛宇
+      participants: []
     summary: 2025 赛季训练赛场搭建与维护。
     outcomes: []
     assets:
@@ -785,7 +805,7 @@ projects:
   - id: outpost-2024
     title: 前哨站
     category: infrastructure
-    season: "2024"
+    season: "2024-2026"
     display_order: 202401
     status: 已完成
     lifecycle:
@@ -793,32 +813,12 @@ projects:
       end: ""
       phase: 赛季基础设施建设
     people:
-      lead: ""
-      participants: []
-    summary: 2024 赛季前哨站相关训练与测试设施。
+      lead: 张博洋
+      participants: [徐进]
+    summary: 2024-2026 赛季前哨站相关训练与测试设施。
     outcomes: []
     assets:
       cover: assets/images/project/infrastructure/前哨站.jpg
-      gallery: []
-    notes: ""
-
-  - id: base-2024
-    title: 基地
-    category: infrastructure
-    season: "2024"
-    display_order: 202402
-    status: 已完成
-    lifecycle:
-      start: ""
-      end: ""
-      phase: 赛季基础设施建设
-    people:
-      lead: ""
-      participants: []
-    summary: 2024 赛季基地相关训练与测试设施。
-    outcomes: []
-    assets:
-      cover: ""
       gallery: []
     notes: ""
 
