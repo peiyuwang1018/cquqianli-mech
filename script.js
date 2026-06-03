@@ -81,15 +81,69 @@ function syncNavState() {
   });
 }
 
+function getAnchorOffset() {
+  const header = document.querySelector(".site-header");
+  return header ? Math.ceil(header.getBoundingClientRect().bottom) : 0;
+}
+
+function scrollToHash(hash, options = {}) {
+  if (!hash || hash === "#") return false;
+
+  const targetId = decodeURIComponent(hash.slice(1));
+  const target = document.getElementById(targetId);
+  if (!target) return false;
+
+  const targetTop = target.getBoundingClientRect().top + window.scrollY - getAnchorOffset();
+  window.scrollTo({
+    top: Math.max(0, targetTop),
+    behavior: options.smooth && !reducedMotion.matches ? "smooth" : "auto",
+  });
+  return true;
+}
+
+function settleHashScroll(hash = window.location.hash) {
+  if (!hash) return;
+
+  [0, 120, 360, 800, 1600].forEach((delay) => {
+    window.setTimeout(() => scrollToHash(hash), delay);
+  });
+
+  if (document.fonts?.ready) {
+    document.fonts.ready.then(() => scrollToHash(hash));
+  }
+}
+
 links.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (event) => {
+    const linkUrl = new URL(link.getAttribute("href"), window.location.href);
+    const isSamePage =
+      linkUrl.origin === window.location.origin &&
+      linkUrl.pathname === window.location.pathname &&
+      linkUrl.hash;
+
+    if (isSamePage) {
+      event.preventDefault();
+      history.pushState(null, "", linkUrl.hash);
+      scrollToHash(linkUrl.hash, { smooth: true });
+      syncNavState();
+    }
+
     navLinks.classList.remove("is-open");
     navToggle?.setAttribute("aria-expanded", "false");
   });
 });
 
 syncNavState();
-window.addEventListener("hashchange", syncNavState);
+window.addEventListener("hashchange", () => {
+  settleHashScroll();
+  syncNavState();
+});
+window.addEventListener("load", () => {
+  requestAnimationFrame(() => settleHashScroll());
+});
+if (window.location.hash) {
+  requestAnimationFrame(() => settleHashScroll());
+}
 
 document.querySelectorAll(".project-carousel-shell").forEach((shell) => {
   const carousel = shell.querySelector(".project-carousel");

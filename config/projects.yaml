@@ -4,6 +4,7 @@
 # - module_branch    模块/支线研发
 # - infrastructure   基础设施建设
 # - culture_training 培训工作
+# - extra_interest   兴趣/番外项目
 # - training         梯队基础训练项目
 #
 # 维护建议：
@@ -16,9 +17,30 @@ categories:
   module_branch: 模块/支线研发
   infrastructure: 基础设施建设
   culture_training: 培训工作
+  extra_interest: 兴趣/番外项目
   training: 梯队基础训练项目
 
 projects:
+  - id: aerial-robot-2025
+    title: 25赛季无人机
+    category: whole_robot
+    season: "2025"
+    display_order: 202500
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 张天煦
+      participants: [谭虹利]
+    summary: 面向 2025 赛季空中机器人任务开展无人机整机机械系统研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
   - id: serial-leg-infantry-2025
     title: 串联腿步兵
     category: whole_robot
@@ -59,11 +81,111 @@ projects:
       gallery: []
     notes: ""
 
+  - id: aerial-robot-2024
+    title: 24赛季无人机
+    category: whole_robot
+    season: "2024"
+    display_order: 202400
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 李页丹
+      participants: [张博洋]
+    summary: 面向 2024 赛季空中机器人任务开展无人机整机机械系统研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: regional-swerve-infantry-2024
+    title: 24分区赛舵轮步兵
+    category: whole_robot
+    season: "2024"
+    display_order: 202401
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 何煦
+      participants: [覃宇铭]
+    summary: 面向 2024 赛季分区赛步兵需求开展舵轮步兵整机机械系统研发。
+    outcomes: []
+    assets:
+      cover: assets/images/project/robot/24赛季舵轮.jpg
+      gallery: []
+    notes: ""
+
+  - id: national-swerve-2024
+    title: 24国赛舵轮
+    category: whole_robot
+    season: "2024"
+    display_order: 202402
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 符兴毅
+      participants: [何煦]
+    summary: 面向 2024 赛季国赛阶段需求开展舵轮机器人机械系统研发。
+    outcomes: []
+    assets:
+      cover: assets/images/project/robot/24赛季舵轮.jpg
+      gallery: []
+    notes: ""
+
+  - id: national-balance-infantry-2024
+    title: 24国赛平衡步兵
+    category: whole_robot
+    season: "2024"
+    display_order: 202403
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 覃宇铭
+      participants: []
+    summary: 面向 2024 赛季国赛阶段需求开展平衡步兵机械系统研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: scara-engineer-2024
+    title: SCARA工程
+    category: whole_robot
+    season: "2024"
+    display_order: 202404
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 全锐
+      participants: [傅佳键]
+    summary: 面向 2024 赛季工程机器人任务开展 SCARA 工程机械系统研发。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
   - id: tri-friction-hero-2024
     title: 三摩擦英雄
     category: whole_robot
     season: "2024"
-    display_order: 202401
+    display_order: 202405
     status: 已完成
     lifecycle:
       start: ""
@@ -75,7 +197,7 @@ projects:
     summary: 面向 2024 赛季英雄机器人任务，开展三摩擦发射与整机结构集成。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/robot/三摩擦英雄.jpg
       gallery: []
     notes: ""
 
@@ -83,7 +205,7 @@ projects:
     title: 并联腿步兵
     category: whole_robot
     season: "2024"
-    display_order: 202402
+    display_order: 202406
     status: 已完成
     lifecycle:
       start: ""
@@ -195,7 +317,7 @@ projects:
     summary: 面向 17mm 发射系统集成的鹅颈式云台结构研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/鹅颈云台.jpg
       gallery: []
     notes: ""
 
@@ -215,7 +337,7 @@ projects:
     summary: 面向 42mm 弹丸发射需求的双大轮发射机构设计与测试。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/双大轮发射.jpg
       gallery: []
     notes: ""
 
@@ -420,6 +542,26 @@ projects:
       gallery: []
     notes: ""
 
+  - id: early-mech-knowledge-base-2023
+    title: 早期机械组知识库网站
+    category: culture_training
+    season: "2023"
+    display_order: 25
+    status: 已终止
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 培训工作 / 知识库建设
+    people:
+      lead: ""
+      participants: [汪沛宇]
+    summary: 2023 年早期机械组知识沉淀与资料整理网站，现已终止。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
   - id: engineering-product-frontier-salon
     title: 工程产品分析/前沿分享沙龙
     category: culture_training
@@ -460,6 +602,66 @@ projects:
       gallery: []
     notes: ""
 
+  - id: printed-cycloidal-reducer
+    title: 3D打印摆线减速器
+    category: extra_interest
+    season: 番外
+    display_order: 10
+    status: 待补充
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 兴趣/番外项目
+    people:
+      lead: ""
+      participants: []
+    summary: 和大创项目、宣传周边、个人兴趣、课设或毕设相关的番外项目，战队与机械组视情况予以支持。
+    outcomes: []
+    assets:
+      cover: assets/images/project/extra/摆线减速器.jpg
+      gallery: []
+    notes: ""
+
+  - id: tennis-robot
+    title: 网球机器人
+    category: extra_interest
+    season: 番外
+    display_order: 20
+    status: 待补充
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 兴趣/番外项目
+    people:
+      lead: ""
+      participants: []
+    summary: 和大创项目、宣传周边、个人兴趣、课设或毕设相关的番外项目，战队与机械组视情况予以支持。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
+  - id: robotic-fish
+    title: 机器鱼
+    category: extra_interest
+    season: 番外
+    display_order: 30
+    status: 待补充
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 兴趣/番外项目
+    people:
+      lead: ""
+      participants: []
+    summary: 和大创项目、宣传周边、个人兴趣、课设或毕设相关的番外项目，战队与机械组视情况予以支持。
+    outcomes: []
+    assets:
+      cover: ""
+      gallery: []
+    notes: ""
+
   - id: tech-core-exchange-station-2026
     title: 科技核心兑换站
     category: infrastructure
@@ -472,7 +674,7 @@ projects:
       phase: 方案设计 / 制造验证
     people:
       lead: ""
-      participants: []
+      participants: [高阳洋, 张铭珂]
     summary: 2026 赛季科技核心兑换站设计与建设。
     outcomes: []
     assets:
@@ -492,8 +694,28 @@ projects:
       phase: 方案设计 / 制造验证
     people:
       lead: ""
-      participants: []
+      participants: [陈夏菲]
     summary: 2026 赛季折叠便携基地设计与建设。
+    outcomes: []
+    assets:
+      cover: assets/images/project/infrastructure/折叠基地.png
+      gallery: []
+    notes: ""
+
+  - id: engineer-resource-island-2026
+    title: 26赛季工程资源岛
+    category: infrastructure
+    season: "2026"
+    display_order: 202603
+    status: 规划中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 方案设计 / 制造验证
+    people:
+      lead: ""
+      participants: [陈夏菲]
+    summary: 2026 赛季工程资源岛设计与建设。
     outcomes: []
     assets:
       cover: ""
@@ -512,7 +734,7 @@ projects:
       phase: 赛季基础设施建设
     people:
       lead: ""
-      participants: []
+      participants: [全锐]
     summary: 2025 赛季能量机关相关训练与测试设施。
     outcomes: []
     assets:
@@ -532,7 +754,7 @@ projects:
       phase: 赛季基础设施建设
     people:
       lead: ""
-      participants: []
+      participants: [汪沛宇, 张博洋, 全锐, 张郭浩]
     summary: 2025 赛季用于射击、识别或测试任务的靶车平台。
     outcomes: []
     assets:
@@ -552,11 +774,11 @@ projects:
       phase: 赛季基础设施建设
     people:
       lead: ""
-      participants: []
+      participants: [汪沛宇]
     summary: 2025 赛季训练赛场搭建与维护。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/infrastructure/训练场地.jpg
       gallery: []
     notes: ""
 
