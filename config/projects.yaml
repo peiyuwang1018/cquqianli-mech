@@ -41,6 +41,26 @@ projects:
       gallery: []
     notes: ""
 
+  - id: engineer-robot-2026
+    title: 26赛季工程
+    category: whole_robot
+    season: "2026"
+    display_order: 202601
+    status: 研发中
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 张天煦
+      participants: [郭禹澄]
+    summary: 面向 2026 赛季工程机器人任务开展工程整机机械系统研发。
+    outcomes: []
+    assets:
+      cover: assets/images/project/robot/26赛季工程.png
+      gallery: []
+    notes: ""
+
   - id: aerial-robot-2025
     title: 25赛季无人机
     category: whole_robot
@@ -82,7 +102,7 @@ projects:
     notes: ""
 
   - id: compact-omni-infantry-2025
-    title: 紧凑全向轮步兵
+    title: 紧凑全向轮步兵/哨兵
     category: whole_robot
     season: "2025"
     display_order: 202502
@@ -97,7 +117,7 @@ projects:
     summary: 围绕紧凑布局、稳定运动与快速维护开展 2025 赛季全向轮步兵整机研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/robot/紧凑全向轮.jpg
       gallery: []
     notes: ""
 
@@ -117,7 +137,7 @@ projects:
     summary: 面向 2024 赛季空中机器人任务开展无人机整机机械系统研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/robot/24无人机.jpg
       gallery: []
     notes: ""
 
@@ -162,7 +182,7 @@ projects:
     notes: ""
 
   - id: national-balance-infantry-2024
-    title: 24国赛平衡步兵
+    title: 24复活赛平衡步兵
     category: whole_robot
     season: "2024"
     display_order: 202403
@@ -177,15 +197,15 @@ projects:
     summary: 面向 2024 赛季国赛阶段需求开展平衡步兵机械系统研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/项目占位图.png
       gallery: []
     notes: ""
 
-  - id: scara-engineer-2024
+  - id: scara-engineer-2024-2025
     title: SCARA工程
     category: whole_robot
-    season: "2024"
-    display_order: 202404
+    season: "2024 / 2025"
+    display_order: 202399
     status: 已完成
     lifecycle:
       start: ""
@@ -194,10 +214,30 @@ projects:
     people:
       lead: 全锐
       participants: [傅佳键]
-    summary: 面向 2024 赛季工程机器人任务开展 SCARA 工程机械系统研发。
+    summary: 面向 2024 至 2025 赛季工程机器人任务开展 SCARA 工程机械系统研发。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/robot/SCARA工程.jpg
+      gallery: []
+    notes: ""
+
+  - id: friction-wheel-dart-2024-2025
+    title: 摩擦轮飞镖
+    category: whole_robot
+    season: "2024 / 2025"
+    display_order: 202398
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 赛季整机研发
+    people:
+      lead: 李晨弘
+      participants: [郭丁赫]
+    summary: 面向飞镖机器人任务开展摩擦轮飞镖机械系统研发。
+    outcomes: []
+    assets:
+      cover: assets/images/project/robot/摩擦轮飞镖.png
       gallery: []
     notes: ""
 
@@ -221,11 +261,11 @@ projects:
       gallery: []
     notes: ""
 
-  - id: parallel-leg-infantry-2024
+  - id: parallel-leg-infantry-2025
     title: 并联腿步兵
     category: whole_robot
-    season: "2024"
-    display_order: 202406
+    season: "2025"
+    display_order: 202503
     status: 已完成
     lifecycle:
       start: ""
@@ -233,11 +273,11 @@ projects:
       phase: 赛季整机研发
     people:
       lead: 覃宇铭
-      participants: []
-    summary: 2024 赛季并联腿步兵机械系统方案设计、装配调试与赛季迭代。
+      participants: [王巍澄]
+    summary: 2025 赛季并联腿步兵机械系统方案设计、装配调试与赛季迭代。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/robot/并联腿.jpg
       gallery: []
     notes: ""
 
@@ -381,6 +421,46 @@ projects:
       gallery: []
     notes: ""
 
+  - id: six-friction-launcher-2025
+    title: 六摩擦发射机构
+    category: module_branch
+    season: "2025"
+    display_order: 202506
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 赛季迭代
+    people:
+      lead: 张天煦
+      participants: []
+    summary: 面向英雄机器人发射链路开展的六摩擦发射机构方案探索与结构设计。
+    outcomes: []
+    assets:
+      cover: assets/images/project/module/六摩擦发射机构.png
+      gallery: []
+    notes: ""
+
+  - id: watt-linkage-swerve-module-2023
+    title: 瓦特连杆舵轮模块
+    category: module_branch
+    season: "2023"
+    display_order: 202301
+    status: 已完成
+    lifecycle:
+      start: ""
+      end: ""
+      phase: 模块研发 / 方案探索
+    people:
+      lead: 伍宇杰
+      participants: []
+    summary: 早期瓦特连杆舵轮模块结构方案探索。
+    outcomes: []
+    assets:
+      cover: assets/images/project/项目占位图.png
+      gallery: []
+    notes: ""
+
   - id: self-developed-gearbox-2025
     title: 自研减速箱
     category: module_branch
@@ -397,7 +477,7 @@ projects:
     summary: 面向传动效率、结构紧凑性与可维护性的自研减速箱设计。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/项目占位图.png
       gallery: []
     notes: ""
 
@@ -417,7 +497,7 @@ projects:
     summary: 面向 17mm 发射链路的中心供弹机构研发与可靠性验证。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/中心供弹.png
       gallery: []
     notes: ""
 
@@ -437,7 +517,7 @@ projects:
     summary: 通过结构轻量化与拓扑优化思路开展云台机械系统探索。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/拓扑云台.png
       gallery: []
     notes: ""
 
@@ -457,7 +537,7 @@ projects:
     summary: 在 2.5 摩擦方案基础上继续迭代的三摩擦发射机构。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/3摩擦.png
       gallery: []
     notes: 晚于 2.5 摩擦 42mm 发射机构。
 
@@ -477,7 +557,7 @@ projects:
     summary: 早期 42mm 发射链路方案探索，时间早于三摩擦发射机构。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/module/2点5摩擦.png
       gallery: []
     notes: 早于三摩擦发射机构。
 
@@ -497,7 +577,7 @@ projects:
     summary: 面向英雄机器人 pitch 轴调节需求的丝杆驱动云台方案。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/项目占位图.png
       gallery: []
     notes: ""
 
@@ -838,7 +918,7 @@ projects:
     summary: 面向新成员基础结构设计、加工装配与调试记录的训练项目。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/项目占位图.png
       gallery: []
     notes: ""
 
@@ -858,6 +938,6 @@ projects:
     summary: 面向机械传动、运动结构与任务执行链路的梯队基础训练项目。
     outcomes: []
     assets:
-      cover: ""
+      cover: assets/images/project/项目占位图.png
       gallery: []
     notes: ""

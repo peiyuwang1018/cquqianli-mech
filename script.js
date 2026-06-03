@@ -101,11 +101,35 @@ function scrollToHash(hash, options = {}) {
   return true;
 }
 
+function openProjectAccordionForHash(hash = window.location.hash) {
+  if (!hash || !document.body.matches('[data-page="projects"]')) return;
+
+  const targetId = decodeURIComponent(hash.slice(1));
+  let accordion = null;
+
+  if (targetId === "education-culture") {
+    accordion = document.getElementById("education-culture")?.nextElementSibling;
+  } else if (targetId === "rm-tech") {
+    accordion = document.querySelector("#rm-tech .project-accordion");
+  }
+
+  if (!accordion?.matches?.(".project-accordion")) return;
+
+  document.querySelectorAll(".project-accordion").forEach((otherAccordion) => {
+    otherAccordion.open = otherAccordion === accordion;
+  });
+}
+
 function settleHashScroll(hash = window.location.hash) {
   if (!hash) return;
 
+  openProjectAccordionForHash(hash);
+
   [0, 120, 360, 800, 1600].forEach((delay) => {
-    window.setTimeout(() => scrollToHash(hash), delay);
+    window.setTimeout(() => {
+      openProjectAccordionForHash(hash);
+      scrollToHash(hash);
+    }, delay);
   });
 
   if (document.fonts?.ready) {
@@ -124,6 +148,7 @@ links.forEach((link) => {
     if (isSamePage) {
       event.preventDefault();
       history.pushState(null, "", linkUrl.hash);
+      openProjectAccordionForHash(linkUrl.hash);
       scrollToHash(linkUrl.hash, { smooth: true });
       syncNavState();
     }
@@ -135,6 +160,7 @@ links.forEach((link) => {
 
 syncNavState();
 window.addEventListener("hashchange", () => {
+  openProjectAccordionForHash();
   settleHashScroll();
   syncNavState();
 });

@@ -838,6 +838,17 @@ main,
   line-height: 1.35;
 }
 
+.entry-title-with-status em {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
 .history-entry-card small {
   color: var(--muted);
   font-size: 15px;
@@ -898,25 +909,66 @@ main,
   font-style: normal;
 }
 
+.construction-notice {
+  border-top: 1px solid rgba(223, 169, 42, 0.35);
+  border-bottom: 1px solid rgba(223, 169, 42, 0.45);
+  background: #fff6d6;
+  color: #6f4e00;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.construction-notice > div {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 10px 36px;
+}
+
+:root[data-theme="dark"] .construction-notice {
+  border-color: rgba(255, 209, 102, 0.34);
+  background: rgba(255, 209, 102, 0.12);
+  color: #f5d47a;
+}
+
 .history-year-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: 32px;
 }
 
 .history-year-grid article {
   display: grid;
-  align-content: start;
-  gap: 12px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  background: var(--card-bg);
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.42fr);
+  gap: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--soft-line);
+  align-items: start;
 }
 
-.history-year-grid article > span {
+.history-year-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.history-year-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.history-year-title > span {
   color: var(--accent);
   font-size: 14px;
   font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.75;
+  width: fit-content;
+}
+
+.history-year-title > small {
+  color: var(--accent);
+  font-size: 14px;
+  line-height: 1.75;
 }
 
 .history-year-grid h3 {
@@ -931,9 +983,18 @@ main,
   color: var(--muted);
 }
 
+.history-year-grid p + p {
+  margin-top: 4px;
+}
+
+.history-year-grid a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
 .history-year-placeholder {
   min-height: 0;
-  margin-top: 6px;
   aspect-ratio: 4 / 3;
 }
 
@@ -3907,8 +3968,9 @@ address a {
     gap: 8px;
   }
 
-  .history-year-grid {
+  .history-year-grid article {
     grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .about-subpage-grid,

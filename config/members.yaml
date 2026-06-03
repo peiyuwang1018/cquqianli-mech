@@ -118,21 +118,21 @@ formal_members:
     role: ""
     intro: 负责飞镖镖体结构设计、空气动力学分析与迭代优化，保障飞镖机器人发射与飞行稳定性。
     grade: ""
-    photo: ""
+    photo: assets/photos/胡茗媛.jpg
     projects: []
   - name: 朱雨文
     unit: 步哨
     role: ""
     intro: 负责步兵机器人模块优化、机械调试与日常维护，推进步兵平台模块迭代。
     grade: ""
-    photo: ""
+    photo: assets/photos/朱雨文.jpg
     projects: []
   - name: 胡锦宇
     unit: 英雄
     role: ""
     intro: 负责工程机器人测试模块设计、加工与维护，参与大臂联调，保障工程机器人的测试能力。
     grade: ""
-    photo: ""
+    photo: assets/photos/胡锦宇.jpg
     projects: []
 
 trainees:
