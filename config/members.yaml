@@ -135,7 +135,9 @@ trainees:
 
 past_member_names:
   - season: "2026"
-    advisor: []
+    advisor:
+      - 江晨曦
+      - 李晨弘
     formal:
       - 张天煦
       - 樊亦媛
@@ -150,8 +152,11 @@ past_member_names:
       - 张郭浩
       - 胡茗媛
       - 朱雨文
+    trainee:
+      - 张嘉铭
+      - 罗雨婷
+      - 唐灏铭
       - 胡锦宇
-    trainee: []
     left: []
   - season: "2025"
     advisor:
