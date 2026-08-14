@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>关于千里 | 重庆大学千里战队机械组</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.dataset.theme = savedTheme || preferredTheme;
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20260814-organization" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7H7TDZTBG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-X7H7TDZTBG");
+    </script>
+  </head>
+  <body data-page="about">
+    <header class="site-header">
+      <nav class="nav" aria-label="主导航">
+        <a class="brand" href="index.html" aria-label="返回首页">
+          <span class="brand-logos" aria-hidden="true">
+            <img src="assets/logo/qianli战队马头logo.PNG" alt="" />
+            <img src="assets/logo/机械组logo.PNG" alt="" />
+          </span>
+          <span class="brand-text"><strong>重庆大学千里战队</strong><small>机械组</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html" data-nav="home">首页</a>
+          <span class="nav-menu"><a href="about.html" data-nav="about" aria-haspopup="true">关于我们</a><span class="nav-dropdown" aria-label="关于我们子页面"><a href="about-qianli.html">关于千里</a><a href="about-workflow.html">研发内容与工作流</a><a href="about-management.html">管理和协作</a><a href="about-history.html">机械组历史</a></span></span>
+          <span class="nav-menu"><a href="resources.html" data-nav="resources" aria-haspopup="true">团队资源</a><span class="nav-dropdown" aria-label="团队资源子页面"><a href="resource-training.html">培养计划</a><a href="resource-equipment.html">设备资源</a></span></span>
+          <span class="nav-menu"><a href="projects.html" data-nav="projects" aria-haspopup="true">建设项目</a><span class="nav-dropdown" aria-label="建设项目页内导航"><a href="projects.html#rm-tech">RM 技术研发</a><a href="projects.html#education-culture">教育与文化建设</a></span></span>
+          <a href="team.html" data-nav="team">部门成员</a>
+          <a href="alumni.html" data-nav="alumni">人才去向</a>
+          <span class="nav-menu"><a href="join.html" data-nav="join" aria-haspopup="true">加入我们</a><span class="nav-dropdown" aria-label="加入我们页内导航"><a href="join.html#persona">人才画像</a><a href="join.html#philosophy">培养理念</a><a href="join.html#recruit">招新信息</a><a href="join.html#qa">Q&amp;A</a></span></span>
+          <a href="downloads.html" data-nav="downloads">下载区</a>
+          <a href="contact.html" data-nav="contact">联系方式</a>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="切换明暗模式" aria-pressed="false">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-2.2a3.8 3.8 0 1 0 0-7.6 3.8 3.8 0 0 0 0 7.6ZM11 1h2v3h-2V1Zm0 19h2v3h-2v-3ZM3.52 4.93l1.41-1.41 2.12 2.12-1.41 1.41-2.12-2.12Zm13.43 13.43 1.41-1.41 2.12 2.12-1.41 1.41-2.12-2.12ZM1 11h3v2H1v-2Zm19 0h3v2h-3v-2ZM3.52 19.07l2.12-2.12 1.41 1.41-2.12 2.12-1.41-1.41ZM16.95 5.64l2.12-2.12 1.41 1.41-2.12 2.12-1.41-1.41Z" /></svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.1 2.1a8.8 8.8 0 0 0 9.8 9.8A10 10 0 1 1 12.1 2.1Zm-2.5 2.8A7.7 7.7 0 1 0 19.1 14.4 10.8 10.8 0 0 1 9.6 4.9Z" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero qianli-hero">
+        <div>
+          <p class="page-label">ABOUT QIANLI</p>
+          <h1>关于千里</h1>
+        </div>
+        <p>千里战队采用兵种项目制与技术专业制交叉协作，成员同时拥有技术、职责、兵种和赛季定位四种组织坐标。本页展示每个赛季的通用架构，不对应具体人员。</p>
+      </section>
+
+      <section class="section-block organization-section" data-organization-map>
+        <div class="organization-intro">
+          <div>
+            <p class="page-label" data-organization-eyebrow></p>
+            <h2 data-organization-heading></h2>
+          </div>
+          <p data-organization-description></p>
+        </div>
+
+        <div class="organization-tabs" role="tablist" aria-label="切换组织架构视角" data-organization-tabs></div>
+        <div class="organization-stage" data-organization-stage></div>
+        <div class="organization-context" aria-live="polite" data-organization-context></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© 2026 重庆大学千里战队机械组</p><p>网站编辑：汪沛宇 × Codex</p><p>网站建设贡献者：张郭浩、陈夏菲、高阳洋、杨杨文琦</p></footer>
+    <script src="script.js?v=20260602-anchor3"></script>
+    <script src="config/organization.js?v=20260814"></script>
+    <script src="organization.js?v=20260814"></script>
+  </body>
+</html>
