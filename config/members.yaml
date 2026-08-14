@@ -44,35 +44,35 @@ formal_members:
     photo: assets/photos/张天煦.jpg
     projects: []
   - name: 赵乙璠
-    unit: 工程
+    unit: 重装
     role: ""
     intro: 工程组成员，负责工程大臂结构设计、运动学分析、加工设计与负载能力评估。
     grade: ""
     photo: ""
     projects: []
   - name: 郭禹澄
-    unit: 工程
+    unit: 重装
     role: ""
     intro: 原工程组负责人，负责工程机器人底盘改进、安装调试、全车联调与运动性能优化。
     grade: ""
     photo: ""
     projects: []
   - name: 卢裕阳
-    unit: 英雄
+    unit: 重装
     role: ""
     intro: 负责英雄机器人底盘结构设计、运动学分析与迭代升级，保障英雄机器人的机动性与可靠性。
     grade: ""
     photo: assets/photos/卢裕阳.jpg
     projects: []
   - name: 高阳洋
-    unit: 英雄
+    unit: 重装
     role: ""
     intro: 负责三摩擦云台优化设计、机械调试与性能校准，参与英雄机器人日常维护。
     grade: ""
     photo: ""
     projects: []
   - name: 陈夏菲
-    unit: 工程
+    unit: 重装
     role: ""
     intro: 现任工程负责人，负责工程末三轴结构设计、基地等基础设施规划建设，并统筹工程项目研发与联调。
     grade: ""
@@ -108,12 +108,12 @@ formal_members:
     projects: []
 trainees:
   - name: 姓名
-    unit: 英雄
+    unit: 重装
     role: ""
     grade: ""
     photo: ""
   - name: 姓名
-    unit: 工程
+    unit: 重装
     role: ""
     grade: ""
     photo: ""
