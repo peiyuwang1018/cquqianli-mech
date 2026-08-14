@@ -26,7 +26,7 @@ window.QIANLI_ORGANIZATION = {
           note: "面向全队提供长期、跨项目的传播和运营支持。",
           layout: "single",
           cards: [
-            { title: "宣运", meta: "全队覆盖", description: "负责视觉传播、内容建设、赛事运营与团队公共形象，不归属单一兵种。", variant: "global", tone: "rose" },
+            { title: "宣传运营", meta: "全队覆盖", description: "统筹团队传播、活动组织与财务事务，不归属单一兵种。", tags: ["宣传设计", "组织策划", "财务管理"], variant: "global", tone: "rose" },
           ],
         },
       ],
@@ -50,7 +50,7 @@ window.QIANLI_ORGANIZATION = {
               description: "由常设管理职责与研发协调接口共同组成，承担跨组决策和资源协调。",
               variant: "management",
               sections: [
-                { label: "常设管理职责", tags: ["指导老师", "队长", "项目管理", "质量管理"] },
+                { label: "常设管理职责", tags: ["指导老师", "队长", "项目管理", "质量管理", "运营经理"] },
                 { label: "研发协调接口", tags: ["技术组负责人", "兵种负责人"] },
               ],
             },
@@ -76,7 +76,7 @@ window.QIANLI_ORGANIZATION = {
             { title: "电控培训", meta: "电控组", description: "负责控制系统、软件工程与整车调试能力培养。", tone: "blue" },
             { title: "硬件培训", meta: "硬件组", description: "负责电路、电气与硬件工程能力培养。", tone: "green" },
             { title: "视觉培训", meta: "视觉组", description: "负责机器视觉、算法与感知能力培养。", tone: "violet" },
-            { title: "宣运培训", meta: "宣运组", description: "负责传播、内容生产与赛事运营能力培养。", tone: "rose" },
+            { title: "运营培训", meta: "运营组", description: "负责宣传设计、组织策划与财务管理能力培养。", tone: "rose" },
           ],
         },
       ],
@@ -86,7 +86,7 @@ window.QIANLI_ORGANIZATION = {
       icon: "M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a4 4 0 0 1 4 4v2h1.5a1.5 1.5 0 0 1 1.5 1.5v2a1.5 1.5 0 0 1-1.5 1.5H18v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1H4.5A1.5 1.5 0 0 1 3 16.5v-2A1.5 1.5 0 0 1 4.5 13H6v-2a4 4 0 0 1 4-4h1V5.73A2 2 0 0 1 12 2M9 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2m6 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-6 5v2h6v-2H9Z",
       eyebrow: "ROBOT UNITS",
       title: "兵种项目组织",
-      description: "三个兵种组承接赛季项目；机械、电控、视觉进入兵种协作，硬件与宣运跨域覆盖。",
+      description: "三个兵种组承接赛季项目；机械、电控、视觉进入兵种协作，硬件与运营跨域覆盖。",
       lanes: [
         {
           number: "01",
@@ -126,7 +126,7 @@ window.QIANLI_ORGANIZATION = {
           layout: "two",
           cards: [
             { title: "硬件", meta: "覆盖全部兵种", description: "为全部兵种提供电气系统、供电、连接与硬件支持。", variant: "global", tone: "green" },
-            { title: "宣运", meta: "覆盖全队", description: "为兵种与技术工作提供传播、记录、运营和公共内容支持。", variant: "global", tone: "rose" },
+            { title: "宣传运营", meta: "覆盖全队", description: "为兵种与技术工作提供宣传设计、组织策划与财务管理支持。", tags: ["宣传设计", "组织策划", "财务管理"], variant: "global", tone: "rose" },
           ],
         },
       ],
