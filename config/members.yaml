@@ -43,20 +43,6 @@ formal_members:
     grade: ""
     photo: assets/photos/张天煦.jpg
     projects: []
-  - name: 樊亦媛
-    unit: 英雄
-    role: ""
-    intro: 英雄兵种负责人，负责四摩擦云台结构设计、力学分析与样机迭代，统筹英雄机器人研发进度与技术方案。
-    grade: ""
-    photo: ""
-    projects: []
-  - name: 聂山淳
-    unit: 飞镖
-    role: ""
-    intro: 飞镖兵种负责人，负责飞镖镖架结构设计、发射轨迹分析、安装调试与命中精度优化。
-    grade: ""
-    photo: assets/photos/聂山淳.jpg
-    projects: []
   - name: 赵乙璠
     unit: 工程
     role: ""
@@ -82,13 +68,6 @@ formal_members:
     unit: 英雄
     role: ""
     intro: 负责三摩擦云台优化设计、机械调试与性能校准，参与英雄机器人日常维护。
-    grade: ""
-    photo: ""
-    projects: []
-  - name: 张铭珂
-    unit: 步哨
-    role: ""
-    intro: 负责工程自定义控制器结构设计、功能规划、加工设计与联调维护。
     grade: ""
     photo: ""
     projects: []
@@ -127,14 +106,6 @@ formal_members:
     grade: ""
     photo: assets/photos/朱雨文.jpg
     projects: []
-  - name: 胡锦宇
-    unit: 英雄
-    role: ""
-    intro: 负责工程机器人测试模块设计、加工与维护，参与大臂联调，保障工程机器人的测试能力。
-    grade: ""
-    photo: assets/photos/胡锦宇.jpg
-    projects: []
-
 trainees:
   - name: 姓名
     unit: 英雄
@@ -163,6 +134,25 @@ trainees:
     photo: ""
 
 past_member_names:
+  - season: "2026"
+    advisor: []
+    formal:
+      - 张天煦
+      - 樊亦媛
+      - 聂山淳
+      - 赵乙璠
+      - 郭禹澄
+      - 卢裕阳
+      - 高阳洋
+      - 张铭珂
+      - 陈夏菲
+      - 徐进
+      - 张郭浩
+      - 胡茗媛
+      - 朱雨文
+      - 胡锦宇
+    trainee: []
+    left: []
   - season: "2025"
     advisor:
       - 洪瑞珑
