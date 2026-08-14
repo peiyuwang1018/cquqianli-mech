@@ -25,6 +25,7 @@
     article.className = "org-card";
     article.tabIndex = 0;
     if (card.variant) article.classList.add(`org-card--${card.variant}`);
+    if (card.tone) article.classList.add(`org-card--tone-${card.tone}`);
 
     const head = document.createElement("div");
     head.className = "org-card-head";
@@ -185,7 +186,15 @@
     button.type = "button";
     button.role = "tab";
     button.dataset.view = key;
-    button.textContent = view.label;
+    const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    icon.setAttribute("viewBox", "0 0 24 24");
+    icon.setAttribute("aria-hidden", "true");
+    const iconPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    iconPath.setAttribute("d", view.icon);
+    icon.appendChild(iconPath);
+    const label = document.createElement("span");
+    label.textContent = view.label;
+    button.append(icon, label);
     button.addEventListener("click", () => switchView(key));
     tabs.appendChild(button);
   });
